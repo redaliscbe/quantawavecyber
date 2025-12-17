@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Internship Logo</title>
+  <defs>
+    <linearGradient id="LG" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4A90E2"/>
+      <stop offset="100%" stop-color="#6EC6FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="40" fill="url(#LG)"/>
+  <!-- stylized laptop -->
+  <g transform="translate(70,80)" fill="#ffffff" opacity="0.95">
+    <rect x="0" y="60" width="260" height="110" rx="14" />
+    <rect x="18" y="78" width="224" height="68" rx="8" fill="#f0fbff"/>
+    <rect x="36" y="96" width="60" height="20" rx="4" fill="#4a90e2"/>
+    <rect x="102" y="96" width="96" height="20" rx="4" fill="#6ec6ff"/>
+    <rect x="36" y="124" width="162" height="6" rx="3" fill="#e6f4ff"/>
+  </g>
+  <!-- small person/graduate cap -->
+  <g transform="translate(160,28)" fill="#ffffff">
+    <circle cx="40" cy="120" r="18" />
+    <path d="M10 90 L70 90 L40 60 Z" />
+    <rect x="38" y="90" width="4" height="40" rx="2" />
+  </g>
+  <!-- initials -->
+  <text x="200" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="36" fill="#ffffff" font-weight="700" text-anchor="middle">INTERN</text>
+</svg>

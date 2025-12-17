@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>QuantaWave Cyber R&amp;D Lab — HPC</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="QuantaWave Cyber R&D Lab — High Performance Computing (HPC) Lab" />
+  <meta name="keywords" content="HPC, quantum, cybersecurity, clusters, GPU, research" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Required library CSS (remove unused libs if not used) -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Bootstrap & Site CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    /* tiny critical styles */
+    .back-to-top { display: none; position: fixed; right: 1rem; bottom: 1rem; z-index: 999; }
+    #spinner.show { visibility: visible; opacity: 1; transition: opacity .25s linear; }
+  </style>
+</head>
+<body>
+  <!-- Spinner -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" aria-hidden="true">
+    <div class="spinner-border text-primary" role="status" style="width:3rem;height:3rem;">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Header / Brand -->
+  <header class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
+    <div class="container">
+      <a href="index.html" class="h1 text-white mb-0">QuantaWave Cyber R&amp;D Lab</a>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <div>
+    <div class="container-fluid sticky-top" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+          <a href="index.html" class="navbar-brand d-lg-none">
+            <h1 class="text-primary m-0">QuantaWave Cyber R&D Lab</h1>
+          </a>
+          <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+              <a href="index.html" class="nav-item nav-link" aria-current="page">Home</a>
+              <a href="aboutus.html" class="nav-item nav-link">About</a>
+              <a href="research.html" class="nav-item nav-link">Research</a>
+              <div class="nav-item dropdown">
+                <a href="crdlab.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                <div class="dropdown-menu bg-light m-0">
+                  <a href="crdlab.html" class="dropdown-item">Cybersecurity R&D Lab</a>
+                  <a href="qrdlab.html" class="dropdown-item">Quantum R&D Lab</a>
+                  <a href="ai-lab.html" class="dropdown-item">AI & Cyber Analytics Lab</a>
+                  <a href="hpc.html" class="dropdown-item">HPC</a>
+                  <a href="testbed.html" class="dropdown-item">Testbed Access</a>
+                </div>
+              </div>
+              <a href="events.html" class="nav-item nav-link">Events</a>
+              <a href="intern.html" class="nav-item nav-link">Internship</a>
+              <a href="career.html" class="nav-item nav-link">Career</a>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+
+            <div class="ms-auto d-none d-lg-flex">
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"> <i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a>
+              <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HPC LAB SECTION -->
+    <section id="hpc-lab" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">High-Performance Computing (HPC) Lab</h2>
+          <p class="text-muted">QuantawaveCyber HPC Lab delivers scalable, accelerated, and secure computing infrastructure for AI, analytics, scientific simulation, and next-generation research workloads.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Reusable card -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-hdd-network-fill fs-2 text-primary" aria-hidden="true"></i>
+              <h3 class="h5 mt-3 fw-bold">HPC Cluster Infrastructure</h3>
+              <p class="mb-0">Multi-node compute clusters with high-speed interconnects designed for parallel computation and advanced research applications.</p>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-cpu-fill fs-2 text-danger" aria-hidden="true"></i>
+              <h3 class="h5 mt-3 fw-bold">GPU-Accelerated AI &amp; Deep Learning</h3>
+              <p class="mb-0">Optimized GPU environments for training and tuning deep learning models, enabling faster experimentation at scale.</p>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-database-gear fs-2 text-warning" aria-hidden="true"></i>
+              <h3 class="h5 mt-3 fw-bold">High-Volume Data Processing</h3>
+              <p class="mb-0">Infrastructure for massive parallel data analytics, ETL workflows, genomics research, and cryptographic data processing at scale.</p>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-graph-up-arrow fs-2 text-success" aria-hidden="true"></i>
+              <h3 class="h5 mt-3 fw-bold">Scientific &amp; Engineering Simulations</h3>
+              <p class="mb-0">HPC-powered simulation frameworks for physics, chemistry, CFD, FEM, climate models, and engineering computation pipelines.</p>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-cloud-check-fill fs-2 text-info" aria-hidden="true"></i>
+              <h3 class="h5 mt-3 fw-bold">Hybrid Cloud HPC</h3>
+              <p class="mb-0">Elastic computing through integrated on-premise + cloud HPC, enabling workload bursting and containerized workflows.</p>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-shield-check fs-2 text-secondary" aria-hidden="true"></i>
+              <h3 class="h5 mt-3 fw-bold">Secure Compute Environment</h3>
+              <p class="mb-0">Role-based access control, isolated compute nodes, encrypted pipelines, and compliance-ready environments for sensitive workloads.</p>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-diagram-3 fs-2 text-muted" aria-hidden="true"></i>
+              <h3 class="h5 mt-3 fw-bold">Distributed Computing Frameworks</h3>
+              <p class="mb-0">Support for MPI, Slurm, Ray, Spark, and other frameworks enabling efficient workload orchestration at scale.</p>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-shield-lock fs-2 text-primary" aria-hidden="true"></i>
+              <h3 class="h5 mt-3 fw-bold">HPC for Cybersecurity &amp; Cryptanalysis</h3>
+              <p class="mb-0">High-speed computation for encryption analysis, adversarial ML studies, and large-scale security model evaluation.</p>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="p-4 bg-white shadow-sm rounded h-100">
+              <i class="bi bi-speedometer2 fs-2 text-danger" aria-hidden="true"></i>
+              <h3 class="h5 mt-3 fw-bold">ML Model Training &amp; Optimization</h3>
+              <p class="mb-0">Automated pipelines for tuning, hyperparameter search, inference benchmarking, and deployment-grade model optimization.</p>
+            </article>
+          </div>
+        </div>
+        <hr class="my-5">
+         <!-- Contact Row -->
+        <div>
+          <h2 class="h4 mb-3">Request Lab Access / Contact</h2>
+          <p>To request Cybersecurity R&D Lab access for research or collaboration, please contact the Director or fill out the access form.</p>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <p class="small mb-1">Email: <a href="mailto:director@quantawavecyber.com">director@quantawavecyber.com</a></p>
+              <!-- <p class="small mb-1">Coordinator: Dr. P A</p> -->
+              <p class="small mb-0">Phone: +91-76048 99009</p>
+            </div>
+            <div class="col-md-6">
+              <a class="btn btn-primary" href="contact.html"><i class="bi bi-envelope-fill me-2"></i>Contact Lab Coordinator</a>
+              <a class="btn btn-outline-secondary ms-2" href="lab-access-form.html"><i class="bi bi-folder2-open me-2"></i>Access Form</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+ <footer class="container-fluid footer position-relative bg-dark text-white-50 py-5">
+    <div class="container">
+      <div class="row g-5 py-5">
+        <div class="col-lg-6 pe-lg-5">
+          <a href="index.html" class="navbar-brand text-decoration-none">
+            <h1 class="h1 text-primary mb-0"><span class="text-white">QuantaWave Cyber</span></h1>
+            <h1 class="h1 text-primary mb-0"><span class="text-white">R&D Lab</span></h1>
+          </a>
+
+          <address class="mt-3">
+            <p class="mb-0"><i class="fa fa-map-marker-alt me-2" aria-hidden="true"></i>No. 33, 7th Cross, 4th Main, Krishnappa Layout<br>Near Vijayashree Yagashaale, Hosakerehalli<br>Bangalore - 560 085</p>
+            <p class="mb-0"><i class="fa fa-envelope me-2" aria-hidden="true"></i><a href="mailto:info@quantawavecyber.com">info@quantawavecyber.com</a></p>
+            <p class="mb-0"><i class="fa fa-phone-alt me-2" aria-hidden="true"></i><a href="tel:+917604899009">+91 76048 99009</a></p>
+          </address>
+
+          <div class="d-flex mt-4">
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"> <i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a>
+            
+            <a class="btn btn-sm-square btn-primary me-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 ps-lg-5">
+          <div class="row g-5">
+            <div class="col-sm-6">
+              <h4 class="text-light mb-4">Quick Links</h4>
+              <a class="btn btn-link" href="aboutus.html">About Us</a>
+              <a class="btn btn-link" href="contact.html">Contact Us</a>
+              <a class="btn btn-link" href="crdlab.html">Cybersecurity R&D Lab</a>
+              <a class="btn btn-link" href="qrdlab.html">Quantum R&D Lab</a>
+              <a class="btn btn-link" href="events.html">Events</a>
+              <a class="btn btn-link" href="intern.html">Internship</a>
+              <a class="btn btn-link" href="career.html">Career</a>
+            </div>
+            <div class="col-sm-6">
+              <h4 class="text-light mb-4">Research & Labs</h4>
+              <a class="btn btn-link" href="crdlab.html">Cybersecurity R&D</a>
+              <a class="btn btn-link" href="qrdlab.html">Quantum R&D</a>
+              <a class="btn btn-link" href="hpc.html">HPC - Access</a>
+              <a class="btn btn-link" href="testbed.html">Testbed Access</a>
+              <a class="btn btn-link" href="ai-lab.html">AI & Cyber Analytics Lab</a>
+              <a class="btn btn-link" href="publications.html"> Research & Publications</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- JS (deferred) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="lib/wow/wow.min.js" defer></script>
+  <script src="lib/easing/easing.min.js" defer></script>
+  <script src="lib/waypoints/waypoints.min.js" defer></script>
+  <script src="lib/counterup/counterup.min.js" defer></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <script>
+    // hide spinner & show back-to-top on load/scroll
+    window.addEventListener('load', function () {
+      const s = document.getElementById('spinner'); if (s) s.classList.remove('show');
+      const b = document.querySelector('.back-to-top');
+      window.addEventListener('scroll', function () { b.style.display = window.scrollY > 300 ? 'block' : 'none'; });
+    });
+  </script>
+</body>
+</html>

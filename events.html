@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>QuantaWave Cyber R&D Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts & icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Core styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    /* small page-specific helpers (kept minimal so layout is unchanged) */
+    #spinner { transition: opacity .3s ease; }
+    .mini-cal-month { min-width:78px; font-size:12px; }
+    .mini-cal-month .day { width:22px; height:22px; display:grid; place-items:center; border-radius:4px; cursor:default; }
+    .mini-cal-month .sat { cursor:pointer; }
+  </style>
+</head>
+
+<body>
+  <!-- Spinner -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" aria-hidden="false" aria-label="Loading">
+    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Brand -->
+  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
+    <div class="container pb-2">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="container-fluid sticky-top" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+        <a href="index.html" class="navbar-brand d-lg-none">
+          <h1 class="text-primary m-0">QuantaWave Cyber R&D Lab</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="index.html" class="nav-item nav-link" aria-current="page">Home</a>
+            <a href="aboutus.html" class="nav-item nav-link">About</a>
+            <a href="research.html" class="nav-item nav-link">Research</a>
+
+            <div class="nav-item dropdown">
+              <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+              <div class="dropdown-menu bg-light m-0">
+                <a href="crdlab.html" class="dropdown-item">Cybersecurity R&D Lab</a>
+                <a href="qrdlab.html" class="dropdown-item">Quantum R&D Lab</a>
+                <a href="ai-lab.html" class="dropdown-item">AI & Cyber Analytics Lab</a>
+                <a href="hpc.html" class="dropdown-item">HPC</a>
+                <a href="testbed.html" class="dropdown-item">Testbed Access</a>
+              </div>
+            </div>
+
+            <a href="events.html" class="nav-item nav-link active">Events</a>
+            <a href="intern.html" class="nav-item nav-link">Internship</a>
+            <a href="career.html" class="nav-item nav-link">Career</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+
+          <div class="ms-auto d-none d-lg-flex">
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- EVENTS SECTION -->
+  <section id="events" class="py-5">
+    <div class="container">
+      <div class="d-flex align-items-start justify-content-between mb-4">
+        <div>
+          <h1 class="fw-bold mb-1">Offline Workshops & Seminars — Dec 2025 → Feb 2026</h1>
+          <p class="lead mb-0">
+            Continuous Saturday sessions for three months. Default: <strong>4:00 PM – 6:00 PM</strong>.
+            <strong>3rd Saturday</strong>: Morning 10:00–12 & Evening 3:00–5.
+          </p>
+        </div>
+
+        <div class="text-end">
+          <small class="text-muted">Quick calendar — click a highlighted date to jump</small>
+          <div class="mt-2 p-2 border rounded" style="background: rgba(255,255,255,0.02); min-width:240px;">
+            <div id="miniCalendar" class="d-flex gap-2" aria-hidden="false"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EVENTS GRID -->
+      <div class="row g-4 mb-4">
+
+        <!-- 06 Dec 2025 -->
+        <div class="col-md-6" id="event-2025-12-06">
+          <div class="card p-3 h-100">
+            <div class="d-flex align-items-center mb-2">
+              <div class="me-3" style="width:44px; height:44px;">
+                <svg viewBox="0 0 64 64" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cisco">
+                  <rect width="64" height="64" rx="8" fill="#F5F5F7"/>
+                  <text x="50%" y="55%" text-anchor="middle" font-size="18" fill="#0d6efd" font-family="sans-serif">C</text>
+                </svg>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-0">Cisco Enterprise Networking Workshop</h5>
+                <small class="text-muted">Saturday, 06 December 2025 • 4:00 PM – 6:00 PM</small>
+              </div>
+              <span class="badge bg-success ms-3 align-self-start">Hands-on</span>
+            </div>
+
+            <p class="mb-3">VLANs, STP, OSPF & EIGRP with real Cisco devices — practical troubleshooting labs.</p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-sm btn-primary register-btn" data-event="Cisco Enterprise Networking Workshop" data-date="2025-12-06">Register</button>
+              <a href="#event-2025-12-06" class="btn btn-sm btn-outline-secondary">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 Dec 2025 -->
+        <div class="col-md-6" id="event-2025-12-13">
+          <div class="card p-3 h-100">
+            <div class="d-flex align-items-center mb-2">
+              <div class="me-3" style="width:44px; height:44px;">
+                <svg viewBox="0 0 64 64" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Palo Alto">
+                  <rect width="64" height="64" rx="8" fill="#F5F5F7"/>
+                  <text x="50%" y="55%" text-anchor="middle" font-size="14" fill="#0dcaf0" font-family="sans-serif">PA</text>
+                </svg>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-0">Palo Alto Next-Gen Firewall Seminar</h5>
+                <small class="text-muted">Saturday, 13 December 2025 • 4:00 PM – 6:00 PM</small>
+              </div>
+              <span class="badge bg-info ms-3 align-self-start">Seminar</span>
+            </div>
+
+            <p class="mb-3">Zero Trust, App-ID/User-ID & threat prevention with demo walkthroughs.</p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-sm btn-primary register-btn" data-event="Palo Alto Next-Gen Firewall Seminar" data-date="2025-12-13">Register</button>
+              <a href="#event-2025-12-13" class="btn btn-sm btn-outline-secondary">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20 Dec 2025 (3rd Saturday) -->
+        <div class="col-12" id="event-2025-12-20">
+          <div class="card p-3 h-100">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h5 class="mb-1">3rd Saturday — Dual Sessions (Dec)</h5>
+                <small class="text-muted">Saturday, 20 December 2025 • Morning 10:00–12 & Evening 15:00–17:00</small>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <strong>Morning — Fortinet Secure Network Ops</strong>
+                <p class="mb-1"><small class="text-muted">Hands-on FortiGate, VPN & IPS labs</small></p>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-sm btn-primary register-btn" data-event="Fortinet Secure Network Ops (Morning)" data-date="2025-12-20">Register (Morning)</button>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <strong>Evening — Palo Alto Policy Demo</strong>
+                <p class="mb-1"><small class="text-muted">Interactive policy tuning & threat prevention demo</small></p>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-sm btn-primary register-btn" data-event="Palo Alto Policy Demo (Evening)" data-date="2025-12-20">Register (Evening)</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 27 Dec 2025 -->
+        <div class="col-md-6" id="event-2025-12-27">
+          <div class="card p-3 h-100">
+            <div class="d-flex align-items-center mb-2">
+              <div class="me-3" style="width:44px; height:44px;">
+                <svg viewBox="0 0 64 64" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Meraki">
+                  <rect width="64" height="64" rx="8" fill="#F5F5F7"/>
+                  <text x="50%" y="55%" text-anchor="middle" font-size="14" fill="#6f42c1" font-family="sans-serif">M</text>
+                </svg>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-0">Cisco Meraki Cloud Networking Workshop</h5>
+                <small class="text-muted">Saturday, 27 December 2025 • 4:00 PM – 6:00 PM</small>
+              </div>
+              <span class="badge bg-success ms-3 align-self-start">Hands-on</span>
+            </div>
+
+            <p class="mb-3">Meraki Dashboard, SD-WAN & wireless lab with API automation tasks.</p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-sm btn-primary register-btn" data-event="Cisco Meraki Workshop" data-date="2025-12-27">Register</button>
+              <a href="#event-2025-12-27" class="btn btn-sm btn-outline-secondary">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 Jan 2026 -->
+        <div class="col-md-6" id="event-2026-01-03">
+          <div class="card p-3 h-100">
+            <div class="d-flex align-items-center mb-2">
+              <div class="me-3" style="width:44px; height:44px;">
+                <svg viewBox="0 0 64 64" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="F5">
+                  <rect width="64" height="64" rx="8" fill="#F5F5F7"/>
+                  <text x="50%" y="55%" text-anchor="middle" font-size="14" fill="#198754" font-family="sans-serif">F5</text>
+                </svg>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-0">F5 Load Balancer — Practical Workshop</h5>
+                <small class="text-muted">Saturday, 03 January 2026 • 4:00 PM – 6:00 PM</small>
+              </div>
+              <span class="badge bg-success ms-3 align-self-start">Hands-on</span>
+            </div>
+
+            <p class="mb-3">LTM setup, virtual servers, iRules and ASM basics in lab exercises.</p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-sm btn-primary register-btn" data-event="F5 Load Balancer Workshop" data-date="2026-01-03">Register</button>
+              <a href="#event-2026-01-03" class="btn btn-sm btn-outline-secondary">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 Jan 2026 -->
+        <div class="col-md-6" id="event-2026-01-10">
+          <div class="card p-3 h-100">
+            <div class="d-flex align-items-center mb-2">
+              <div class="me-3" style="width:44px; height:44px;">
+                <svg viewBox="0 0 64 64" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Check Point">
+                  <rect width="64" height="64" rx="8" fill="#F5F5F7"/>
+                  <text x="50%" y="55%" text-anchor="middle" font-size="12" fill="#d63384" font-family="sans-serif">CP</text>
+                </svg>
+              </div>
+              <div class="flex-grow-1">
+                <h5 class="mb-0">Check Point Infinity — Seminar</h5>
+                <small class="text-muted">Saturday, 10 January 2026 • 4:00 PM – 6:00 PM</small>
+              </div>
+              <span class="badge bg-info ms-3 align-self-start">Seminar</span>
+            </div>
+
+            <p class="mb-3">SandBlast, CloudGuard demos and enterprise threat prevention strategies.</p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-sm btn-primary register-btn" data-event="Check Point Infinity Seminar" data-date="2026-01-10">Register</button>
+              <a href="#event-2026-01-10" class="btn btn-sm btn-outline-secondary">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional events can be added as similar blocks -->
+      </div>
+
+      <!-- CONTACT -->
+      <div class="mt-4">
+        <h5>Contact for Registration</h5>
+        <div class="p-3 border rounded">
+          <strong>Quantawave Cyber R&amp;D Lab</strong><br>
+          No. 33, 7th Cross, 4th Main, Krishnappa Layout<br>
+          Near Vijayashree Yagashaale, Hosakerehalli<br>
+          Bangalore - 560 085<br><br>
+          Email: <a href="mailto:info@quantawavecyber.com">info@quantawavecyber.com</a>
+        </div>
+        <p class="text-muted mt-2">All events are offline. Registration required — seats limited.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container-fluid footer position-relative bg-dark text-white-50 py-5">
+    <div class="container">
+      <div class="row g-5 py-5">
+        <div class="col-lg-6 pe-lg-5">
+          <a href="index.html" class="navbar-brand text-decoration-none">
+            <h1 class="h1 text-primary mb-0"><span class="text-white">QuantaWave Cyber</span></h1>
+            <h1 class="h1 text-primary mb-0"><span class="text-white">R&D Lab</span></h1>
+          </a>
+
+          <address class="mt-3">
+            <p class="mb-0"><i class="fa fa-map-marker-alt me-2" aria-hidden="true"></i>No. 33, 7th Cross, 4th Main, Krishnappa Layout<br>Near Vijayashree Yagashaale, Hosakerehalli<br>Bangalore - 560 085</p>
+            <p class="mb-0"><i class="fa fa-envelope me-2" aria-hidden="true"></i><a href="mailto:info@quantawavecyber.com">info@quantawavecyber.com</a></p>
+            <p class="mb-0"><i class="fa fa-phone-alt me-2" aria-hidden="true"></i><a href="tel:+917604899009">+91 76048 99009</a></p>
+          </address>
+
+          <div class="d-flex mt-4">
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-sm-square btn-primary me-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 ps-lg-5">
+          <div class="row g-5">
+            <div class="col-sm-6">
+              <h4 class="text-light mb-4">Quick Links</h4>
+              <a class="btn btn-link" href="aboutus.html">About Us</a>
+              <a class="btn btn-link" href="contact.html">Contact Us</a>
+              <a class="btn btn-link" href="crdlab.html">Cybersecurity R&D Lab</a>
+              <a class="btn btn-link" href="qrdlab.html">Quantum R&D Lab</a>
+              <a class="btn btn-link" href="events.html">Events</a>
+              <a class="btn btn-link" href="intern.html">Internship</a>
+              <a class="btn btn-link" href="career.html">Career</a>
+            </div>
+            <div class="col-sm-6">
+              <h4 class="text-light mb-4">Research & Labs</h4>
+              <a class="btn btn-link" href="crdlab.html">Cybersecurity R&D</a>
+              <a class="btn btn-link" href="qrdlab.html">Quantum R&D</a>
+              <a class="btn btn-link" href="hpc.html">HPC - Access</a>
+              <a class="btn btn-link" href="testbed.html">Testbed Access</a>
+              <a class="btn btn-link" href="ai-lab.html">AI & Cyber Analytics Lab</a>
+              <a class="btn btn-link" href="publications.html"> Research & Publications</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="container-fluid copyright bg-dark text-white-50 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; <a href="#">www.quantawavecyber.com</a>. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- JS libraries (kept at end to preserve behavior) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Page: calendar generation & Google Sheet redirect -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // ====== Replace this with your Google Form URL or Apps Script endpoint that writes to Google Sheet ======
+      // Example: const GOOGLE_SHEET_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform';
+      const GOOGLE_SHEET_URL = 'https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_OR_APPS_SCRIPT_URL';
+
+      function openSheetFor(eventTitle, date) {
+        if (!GOOGLE_SHEET_URL || GOOGLE_SHEET_URL.includes('YOUR_GOOGLE')) {
+          const subject = encodeURIComponent('Registration: ' + eventTitle + ' | ' + date);
+          const body = encodeURIComponent(`Event: ${eventTitle}\nDate: ${date}\n\nPlease register me for this event.\n\nRegards,`);
+          window.open('mailto:info@quantawavecyber.com?subject=' + subject + '&body=' + body, '_blank');
+          return;
+        }
+        try {
+          const url = new URL(GOOGLE_SHEET_URL);
+          url.searchParams.set('event', eventTitle);
+          url.searchParams.set('date', date);
+          window.open(url.toString(), '_blank');
+        } catch (e) {
+          window.open(GOOGLE_SHEET_URL, '_blank');
+        }
+      }
+
+      document.querySelectorAll('.register-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+          const e = this.getAttribute('data-event') || this.textContent.trim();
+          const d = this.getAttribute('data-date') || '';
+          openSheetFor(e, d);
+        });
+      });
+
+      // Compact calendar for Dec 2025 | Jan-Feb 2026
+      const miniCal = document.getElementById('miniCalendar');
+      if (!miniCal) return;
+
+      const months = [
+        { m: 11, y: 2025, label: 'Dec 2025' },
+        { m: 0, y: 2026, label: 'Jan 2026' },
+        { m: 1, y: 2026, label: 'Feb 2026' }
+      ];
+
+      function buildMonth(mObj) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'mini-cal-month';
+        wrapper.innerHTML = `<div class="text-center fw-semibold mb-1">${mObj.label}</div>`;
+        const grid = document.createElement('div');
+        grid.style.display = 'grid';
+        grid.style.gridTemplateColumns = 'repeat(7,1fr)';
+        grid.style.gap = '4px';
+        grid.style.justifyItems = 'center';
+
+        ['S','M','T','W','T','F','S'].forEach(d => {
+          const dn = document.createElement('div');
+          dn.style.opacity = '0.6';
+          dn.style.fontSize = '10px';
+          dn.textContent = d;
+          grid.appendChild(dn);
+        });
+
+        const first = new Date(mObj.y, mObj.m, 1);
+        const last = new Date(mObj.y, mObj.m + 1, 0);
+        const startOffset = first.getDay();
+
+        for (let i = 0; i < startOffset; i++) grid.appendChild(document.createElement('div'));
+
+        for (let d = 1; d <= last.getDate(); d++) {
+          const day = document.createElement('div');
+          day.className = 'day';
+          day.textContent = d;
+          const dow = new Date(mObj.y, mObj.m, d).getDay();
+          const dateISO = `${mObj.y}-${String(mObj.m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+
+          if (dow === 6) { // Saturday
+            day.classList.add('sat');
+            day.style.background = '#0d6efd';
+            day.style.color = '#fff';
+            day.title = 'Saturday — click to jump';
+            day.addEventListener('click', () => {
+              const elId = 'event-' + mObj.y + '-' + String(mObj.m + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0');
+              const el = document.getElementById(elId);
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                el.classList.add('border-primary');
+                setTimeout(() => el.classList.remove('border-primary'), 1800);
+              } else {
+                openSheetFor('Saturday Session', dateISO);
+              }
+            });
+          } else {
+            day.style.opacity = '0.5';
+          }
+          grid.appendChild(day);
+        }
+        wrapper.appendChild(grid);
+        return wrapper;
+      }
+
+      months.forEach(m => miniCal.appendChild(buildMonth(m)));
+    });
+
+    // Hide spinner when fully loaded (keeps same UX)
+    window.addEventListener('load', function () {
+      const spinner = document.getElementById('spinner');
+      if (spinner) {
+        spinner.style.opacity = '0';
+        spinner.setAttribute('aria-hidden', 'true');
+        setTimeout(() => spinner.remove(), 400);
+      }
+      if (typeof WOW !== 'undefined') { new WOW().init(); }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>QuantaWave Cyber R&D Lab — Cybersecurity • HPC • Quantum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="cybersecurity, quantum computing, HPC, cyber range, QKD, post-quantum cryptography, R&D, testbed" />
+  <meta name="description" content="QuantaWave Cyber R&D Lab — applied research in cybersecurity, high-performance computing (HPC) and quantum technologies. Testbeds, prototyping, training and industry partnerships." />
+  <link rel="canonical" href="https://quantawavecyber.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="QuantaWave Cyber R&D Lab" />
+  <meta property="og:title" content="QuantaWave Cyber R&D Lab — Cybersecurity • HPC • Quantum" />
+  <meta property="og:description" content="Applied research and testbeds for cybersecurity, quantum technologies and high-performance computing. Partnership, internships and productisation support." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://quantawavecyber.com/" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+  <!-- Libraries Stylesheets -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap (local) -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!-- Structured data (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "QuantaWave Cyber R&D Lab",
+    "url": "https://quantawavecyber.com/",
+    "logo": "https://quantawavecyber.com/img/icons8-quantum-64.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+91-7604899009",
+      "contactType": "customer service",
+      "areaServed": "IN"
+    }],
+    "sameAs": [
+      "https://www.facebook.com/",
+      "https://www.linkedin.com/",
+      "https://www.youtube.com/"
+    ]
+  }
+  </script>
+
+  <style>
+    /* Tiny accessibility helper — keep in template CSS if you prefer */
+    .skip-to-content { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
+    .skip-to-content:focus { left:10px; top:10px; width:auto; height:auto; background:#fff; color:#000; padding:8px 12px; border-radius:4px; z-index:1000; box-shadow:0 6px 18px rgba(2,6,23,.2); }
+    /* minor spinner transition helper (keeps visual identical) */
+    #spinner { transition: opacity .24s ease; }
+  </style>
+</head>
+
+<body>
+  <a class="skip-to-content" href="#main">Skip to main content</a>
+
+  <!-- Spinner Start -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" role="status" aria-label="Loading">
+    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Brand Start -->
+  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner">
+    <div class="container pb-2">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</a>
+      </div>
+    </div>
+  </div>
+  <!-- Brand End -->
+
+  <!-- Navbar Start -->
+  <div>
+    <div class="container-fluid sticky-top" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+          <a href="index.html" class="navbar-brand d-lg-none">
+            <h1 class="text-primary m-0">QuantaWave Cyber R&D Lab</h1>
+          </a>
+          <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+              <a href="index.html" class="nav-item nav-link" aria-current="page">Home</a>
+              <a href="aboutus.html" class="nav-item nav-link">About</a>
+              <a href="research.html" class="nav-item nav-link">Research</a>
+              <div class="nav-item dropdown">
+                <a href="crdlab.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                <div class="dropdown-menu bg-light m-0">
+                  <a href="crdlab.html" class="dropdown-item">Cybersecurity R&D Lab</a>
+                  <a href="qrdlab.html" class="dropdown-item">Quantum R&D Lab</a>
+                  <a href="ai-lab.html" class="dropdown-item">AI & Cyber Analytics Lab</a>
+                  <a href="hpc.html" class="dropdown-item">HPC</a>
+                  <a href="testbed.html" class="dropdown-item">Testbed Access</a>
+                </div>
+              </div>
+              <a href="events.html" class="nav-item nav-link">Events</a>
+              <a href="intern.html" class="nav-item nav-link">Internship</a>
+              <a href="career.html" class="nav-item nav-link">Career</a>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+
+            <div class="ms-auto d-none d-lg-flex">
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+              <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Main content container -->
+  <main id="main" class="container py-5">
+
+    <!-- Hero -->
+    <section class="row align-items-center mb-5">
+      <div class="col-lg-7">
+        <h1 class="display-5 fw-bold">AI & Cyber Analytics Lab</h1>
+        <p class="lead">Interdisciplinary lab for threat analytics, adversarial AI research, SOC automation and cyber resilience — combining AI, ML and security telemetry analysis.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a class="btn btn-primary btn-lg" href="#access"><i class="bi bi-lock-fill me-2"></i>Request Lab Access</a>
+          <a class="btn btn-outline-secondary btn-lg" href="#projects"><i class="bi bi-journal-code me-2"></i>View Projects</a>
+        </div>
+      </div>
+      <div class="col-lg-5 text-center d-none d-lg-block">
+        <img src="img/internship-logo.png" alt="AI Cyber Analytics Lab Logo" class="img-fluid" style="max-height:260px;">
+      </div>
+    </section>
+
+    <!-- About the Lab -->
+    <section class="mb-5">
+      <div class="row g-4">
+        <div class="col-md-8">
+          <h2 class="h4">About the Lab</h2>
+          <p>The AI & Cyber Analytics Lab conducts applied research and hands-on development in cyber threat detection, anomaly analytics, adversarial robustness for AI systems, and automated incident response. We bridge theory and practice by working with real telemetry, curated datasets and defensive tooling.</p>
+          <ul>
+            <li>Threat detection using ML/AI and telemetry fusion</li>
+            <li>Adversarial machine learning & model robustness</li>
+            <li>Behavioral analytics for insider threat detection</li>
+            <li>SOC automation, alert triage and alert prioritization</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Lab Snapshot</h5>
+            <p class="mb-1"><strong>Focus:</strong> AI for Cybersecurity, Threat Analytics</p>
+            <p class="mb-1"><strong>Resources:</strong> GPU Nodes, Packet Capture Cluster, SIEM Access</p>
+            <p class="mb-0"><strong>Open to:</strong> Researchers, Students and Industry collaborators</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Areas -->
+    <section id="research" class="mb-5">
+      <h2 class="h4 mb-3">Research Areas</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-4">
+          <div class="p-3 border rounded h-100 shadow-sm">
+            <h5><i class="bi bi-shield-lock-fill me-2"></i>Threat Detection & Hunting</h5>
+            <p class="small mb-0">ML-driven detection using network, endpoint and log telemetry; threat hunting playbooks.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="p-3 border rounded h-100 shadow-sm">
+            <h5><i class="bi bi-brain me-2"></i>Adversarial ML & Robustness</h5>
+            <p class="small mb-0">Research into adversarial attacks, defenses, certified robustness and safe model deployment.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="p-3 border rounded h-100 shadow-sm">
+            <h5><i class="bi bi-graph-up me-2"></i>Behavioral Analytics</h5>
+            <p class="small mb-0">User and entity behavior analytics for insider threat detection and anomaly scoring.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="p-3 border rounded h-100 shadow-sm">
+            <h5><i class="bi bi-cloud me-2"></i>Cloud Security Analytics</h5>
+            <p class="small mb-0">Cloud telemetry analysis, misconfiguration detection and identity anomaly detection.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="p-3 border rounded h-100 shadow-sm">
+            <h5><i class="bi bi-gear-wide-connected me-2"></i>SOC Automation & Orchestration</h5>
+            <p class="small mb-0">Automating triage, enrichment, and playbook execution using ML and rule-based systems.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="p-3 border rounded h-100 shadow-sm">
+            <h5><i class="bi bi-file-earmark-code me-2"></i>Explainable & Interpretable Models</h5>
+            <p class="small mb-0">Model explanations, feature attribution and human-in-the-loop verification for analysts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipment & Tools -->
+    <section class="mb-5">
+      <h2 class="h4 mb-3">Equipment & Tools</h2>
+      <div class="row g-3">
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 border rounded text-center">
+            <i class="bi bi-cpu fs-1 text-primary"></i>
+            <p class="mb-0 mt-2 small">GPU Cluster (for model training)</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 border rounded text-center">
+            <i class="bi bi-hdd-network fs-1 text-primary"></i>
+            <p class="mb-0 mt-2 small">Packet capture & replay cluster</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 border rounded text-center">
+            <i class="bi bi-server fs-1 text-primary"></i>
+            <p class="mb-0 mt-2 small">SIEM / Log aggregation & query</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 border rounded text-center">
+            <i class="bi bi-cloud-arrow-up fs-1 text-primary"></i>
+            <p class="mb-0 mt-2 small">Cloud sandboxes & containerized labs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-5">
+      <h2 class="h4 mb-3">Selected Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-3 border rounded h-100 shadow-sm">
+            <h5>ML-based Network Intrusion Detection</h5>
+            <p class="small mb-0">Hybrid ML models combining flow features and deep packet inspection signatures.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border rounded h-100 shadow-sm">
+            <h5>Adversarial Robustness for Malware Classifiers</h5>
+            <p class="small mb-0">Benchmarking evasion attacks and defenses on static & dynamic analysis models.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 border rounded h-100 shadow-sm">
+            <h5>Automated Alert Prioritization</h5>
+            <p class="small mb-0">Ranking noisy SIEM alerts using risk scores and analyst feedback loops.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications & Collaborations -->
+    <!-- <section class="mb-5">
+      <h2 class="h4 mb-3">Publications & Collaborations</h2>
+      <p class="small">Recent publications and collaboration briefs are available on request. The lab partners with industry SOC teams and research groups for joint prototyping and field trials.</p>
+      <ul>
+        <li>Joint SOC trial with industry partner (2024) — anomaly detection pipeline</li>
+        <li>Conference paper (2023) — </li>
+      </ul>
+    </section> -->
+
+    <!-- Access / Contact -->
+    <section id="access" class="mb-5">
+      <h2 class="h4 mb-3">Request Lab Access / Contact</h2>
+      <p>To request access for research or collaboration, please contact the lab coordinator or fill out the access form.</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <p class="small mb-1">Email: <a href="mailto:director@quantawavecyber.com">director@quantawavecyber.com</a></p>
+          <!-- <p class="small mb-1">Coordinator: Dr. P A</p> -->
+          <p class="small mb-0">Phone: +91-76048 99009</p>
+        </div>
+        <div class="col-md-6">
+          <a class="btn btn-primary" href="contact.html"><i class="bi bi-envelope-fill me-2"></i>Contact Lab Coordinator</a>
+          <a class="btn btn-outline-secondary ms-2" href="lab-access-form.html"><i class="bi bi-folder2-open me-2"></i>Access Form</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-5">
+      <h2 class="h5 mb-3">FAQ</h2>
+      <div class="accordion" id="labFaq">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="labFaq1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#labFaq1Body">Who can apply for access?</button>
+          </h2>
+          <div id="labFaq1Body" class="accordion-collapse collapse show" data-bs-parent="#labFaq">
+            <div class="accordion-body">Researchers, Students, and approved industry partners may request lab access. Access is granted based on project fit and resource availability.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="labFaq2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#labFaq2Body">Is there any cost for using the lab?</button>
+          </h2>
+          <div id="labFaq2Body" class="accordion-collapse collapse" data-bs-parent="#labFaq">
+            <div class="accordion-body">Basic access for academic projects may be free; cloud credits or specialized hardware usage may incur charges depending on the project.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="labFaq3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#labFaq3Body">Can we run experiments on real networks?</button>
+          </h2>
+          <div id="labFaq3Body" class="accordion-collapse collapse" data-bs-parent="#labFaq">
+            <div class="accordion-body">Experimental network tests are run in isolated lab environments and sandboxed networks. Live production testing requires additional approvals and partner agreements.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Start -->
+  <footer class="container-fluid footer position-relative bg-dark text-white-50 py-5">
+    <div class="container">
+      <div class="row g-5 py-5">
+        <div class="col-lg-6 pe-lg-5">
+          <a href="index.html" class="navbar-brand text-decoration-none">
+            <h1 class="h1 text-primary mb-0"><span class="text-white">QuantaWave Cyber</span></h1>
+            <h1 class="h1 text-primary mb-0"><span class="text-white">R&D Lab</span></h1>
+          </a>
+
+          <address class="mt-3">
+            <p class="mb-0"><i class="fa fa-map-marker-alt me-2" aria-hidden="true"></i>No. 33, 7th Cross, 4th Main, Krishnappa Layout<br>Near Vijayashree Yagashaale, Hosakerehalli<br>Bangalore - 560 085</p>
+            <p class="mb-0"><i class="fa fa-envelope me-2" aria-hidden="true"></i><a href="mailto:info@quantawavecyber.com">info@quantawavecyber.com</a></p>
+            <p class="mb-0"><i class="fa fa-phone-alt me-2" aria-hidden="true"></i><a href="tel:+917604899009">+91 76048 99009</a></p>
+          </address>
+
+          <div class="d-flex mt-4">
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-sm-square btn-primary me-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 ps-lg-5">
+          <div class="row g-5">
+            <div class="col-sm-6">
+              <h4 class="text-light mb-4">Quick Links</h4>
+              <a class="btn btn-link" href="aboutus.html">About Us</a>
+              <a class="btn btn-link" href="contact.html">Contact Us</a>
+              <a class="btn btn-link" href="crdlab.html">Cybersecurity R&D Lab</a>
+              <a class="btn btn-link" href="qrdlab.html">Quantum R&D Lab</a>
+              <a class="btn btn-link" href="events.html">Events</a>
+              <a class="btn btn-link" href="intern.html">Internship</a>
+              <a class="btn btn-link" href="career.html">Career</a>
+            </div>
+            <div class="col-sm-6">
+              <h4 class="text-light mb-4">Research & Labs</h4>
+              <a class="btn btn-link" href="crdlab.html">Cybersecurity R&D</a>
+              <a class="btn btn-link" href="qrdlab.html">Quantum R&D</a>
+              <a class="btn btn-link" href="hpc.html">HPC - Access</a>
+              <a class="btn btn-link" href="testbed.html">Testbed Access</a>
+              <a class="btn btn-link" href="ai-lab.html">AI & Cyber Analytics Lab</a>
+              <a class="btn btn-link" href="publications.html"> Research & Publications</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright bg-dark text-white-50 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; <a href="https://quantawavecyber.com/" class="text-white text-decoration-none">quantawavecyber.com</a>. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries (defer where possible) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="lib/wow/wow.min.js" defer></script>
+  <script src="lib/easing/easing.min.js" defer></script>
+  <script src="lib/waypoints/waypoints.min.js" defer></script>
+  <script src="lib/counterup/counterup.min.js" defer></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
+
+  <!-- Template Javascript (deferred) -->
+  <script src="js/main.js" defer></script>
+
+  <script>
+    // Hide spinner reliably and init animations when page has fully loaded
+    window.addEventListener('load', function () {
+      const spinner = document.getElementById('spinner');
+      if (spinner) {
+        spinner.style.opacity = '0';
+        spinner.setAttribute('aria-hidden', 'true');
+        setTimeout(() => spinner.remove(), 260);
+      }
+      if (typeof WOW !== 'undefined') { new WOW().init(); }
+    });
+  </script>
+
+</body>
+</html>
