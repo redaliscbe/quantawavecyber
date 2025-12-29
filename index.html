@@ -4,52 +4,56 @@
 <head>
   <meta charset="utf-8" />
   <title>QuantaWave Cyber R&D Lab — Cybersecurity • HPC • Quantum • AI </title>
-
-  <!-- Primary meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="cybersecurity, quantum computing, HPC, cyber range, QKD, post-quantum cryptography, R&D, testbed" />
   <meta name="description" content="QuantaWave Cyber R&D Lab — applied research in cybersecurity, high-performance computing (HPC) and quantum technologies. Testbeds, prototyping, training and industry partnerships." />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0d6efd" />
+  
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com" />
+  
   <link rel="canonical" href="https://quantawavecyber.com/" />
   <link rel="alternate" href="https://quantawavecyber.com/" hreflang="en-IN" />
 
-  <!-- Open Graph / Social -->
   <meta property="og:site_name" content="QuantaWave Cyber R&D Lab" />
   <meta property="og:title" content="QuantaWave Cyber R&D Lab — Cybersecurity • HPC • Quantum" />
   <meta property="og:description" content="Applied research and testbeds for cybersecurity, quantum technologies and high-performance computing. Partnership, internships and productisation support." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://quantawavecyber.com/" />
-  <!-- Twitter card -->
+  
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@QuantawaveCyber" />
 
-  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- Preconnect / Font hints -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap" rel="stylesheet" crossorigin="anonymous" />
 
-  <!-- Icon Font -->
+  
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
-  <!-- Libraries Stylesheets -->
+  
   <link href="lib/animate/animate.min.css" rel="stylesheet" />
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-  <!-- Bootstrap (local) -->
+  
   <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Template stylesheet -->
+  
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/inline.css" rel="stylesheet" />
 
-  <!-- Extra SEO structured data (Organization + WebSite) -->
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -84,113 +88,21 @@
   }
   </script>
 
-  <style>
-    /* Tiny accessibility helper — keep in template CSS if you prefer */
-    .skip-to-content {
-      position: absolute;
-      left: -999px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-    }
 
-    .skip-to-content:focus {
-      left: 10px;
-      top: 10px;
-      width: auto;
-      height: auto;
-      background: #fff;
-      color: #000;
-      padding: 8px 12px;
-      border-radius: 4px;
-      z-index: 1000;
-      box-shadow: 0 6px 18px rgba(2, 6, 23, .2);
-    }
 
-    /* Attractive icon treatment (keeps existing <i> elements) */
-    .icon-box-primary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
 
-    .icon-box-primary i,
-    .btn-sm-square i {
-      font-size: 1.35rem;                 /* consistent icon scale */
-      line-height: 1;
-      width: 3.2rem;
-      height: 3.2rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: .9rem;
-      box-shadow: 0 6px 20px rgba(13, 110, 253, 0.14);
-      background: linear-gradient(135deg, rgba(13,110,253,1) 0%, rgba(85,60,255,0.95) 100%);
-      color: #ffffff !important;         /* ensures legibility with icon fonts */
-      transition: transform .18s ease, box-shadow .18s ease;
-    }
 
-    /* accent for feature icons that are "dark" inside those panels */
-    .feature-item .icon-box-primary i,
-    .service-item .icon-box-primary i {
-      width: 3.6rem;
-      height: 3.6rem;
-      border-radius: 12px;
-      font-size: 1.4rem;
-      background: linear-gradient(135deg, rgba(0,0,0,0.08), rgba(0,0,0,0.02));
-      color: #0d6efd !important;
-      box-shadow: none;
-    }
 
-    /* small hover lift */
-    .icon-box-primary i:hover,
-    .btn-sm-square i:hover {
-      transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 14px 28px rgba(13,110,253,0.16);
-    }
 
-    /* make social buttons circular and consistent */
-    .btn-sm-square {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 10px;
-      text-decoration: none;
-      transition: transform .18s ease;
-    }
 
-    .btn-sm-square:hover {
-      transform: translateY(-3px);
-      text-decoration: none;
-    }
 
-    /* Respect reduced-motion preferences */
-    @media (prefers-reduced-motion: reduce) {
-      .icon-box-primary i,
-      .btn-sm-square i,
-      .btn-sm-square {
-        transition: none;
-      }
-    }
 
-    /* small responsive tweaks for very narrow screens */
-    @media (max-width: 420px) {
-      .icon-box-primary i {
-        width: 2.8rem;
-        height: 2.8rem;
-        font-size: 1.15rem;
-      }
-    }
-  </style>
-</head>
+ </head>
 
 <body>
   <a class="skip-to-content" href="#main">Skip to main content</a>
 
-  <!-- Spinner Start -->
+  
   <div id="spinner"
     class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
     aria-hidden="true" aria-label="Loading">
@@ -198,9 +110,9 @@
       <span class="visually-hidden">Loading...</span>
     </div>
   </div>
-  <!-- Spinner End -->
+  
 
-  <!-- Brand Start -->
+  
   <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner" aria-label="QuantaWave brand banner">
     <div class="container pb-2">
       <div class="d-flex align-items-center justify-content-between">
@@ -208,9 +120,9 @@
       </div>
     </div>
   </div>
-  <!-- Brand End -->
+  
 
-  <!-- Navbar Start -->
+  
   <div>
     <div class="container-fluid sticky-top" role="navigation" aria-label="Main navigation">
       <div class="container">
@@ -240,8 +152,8 @@
                 </div>
               </div>
               <div class="nav-item dropdown">
-                <a href="academy.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="servicesDropdown" aria-expanded="false">Academy</a>
-                <div class="dropdown-menu bg-light m-0" aria-labelledby="servicesDropdown">
+                <a href="academy.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="academyDropdown" aria-expanded="false">Academy</a>
+                <div class="dropdown-menu bg-light m-0" aria-labelledby="academyDropdown">
                   <a href="aepc.html" class="dropdown-item">AEPC</a>
                   <a href="pcpc.html" class="dropdown-item">PCPC</a>
                   <a href="pcp-cai.html" class="dropdown-item">PCP-CAI</a>
@@ -253,8 +165,7 @@
               <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
 
-            <div class="ms-auto d-none d-lg-flex" aria-hidden="false">
-              <!-- social buttons kept exactly as in your original -->
+            <div class="ms-auto d-none d-lg-flex">
               <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"> <i class="fab fa-facebook-f" aria-hidden="true"></i></a>
               <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
               <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
@@ -264,17 +175,17 @@
       </div>
     </div>
   </div>
-  <!-- Navbar End -->
+  
 
-  <!-- Main content container -->
+  
   <main id="main" tabindex="-1" role="main" aria-label="Main content">
 
-    <!-- Carousel Start -->
+    
     <div class="container-fluid header-carousel px-0 mb-5">
       <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" aria-label="Header carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="w-100" src="img/carousel-1.jpg" alt="QuantaWave Cybersecurity R&D Lab hero banner showing team and equipment" loading="lazy" width="1600" height="600" />
+            <img class="w-100" src="img/carousel-1.jpg" alt="QuantaWave Cybersecurity R&D Lab hero banner showing team and equipment" loading="lazy" width="1600" height="600" decoding="async" />
             <div class="carousel-caption">
               <div class="container">
                 <div class="row justify-content-end">
@@ -289,7 +200,7 @@
           </div>
 
           <div class="carousel-item">
-            <img class="w-100" src="img/carousel-3.jpg" alt="High Performance Computing infrastructure racks and compute nodes" loading="lazy" width="1600" height="600" />
+            <img class="w-100" src="img/carousel-3.jpg" alt="High Performance Computing infrastructure racks and compute nodes" loading="lazy" width="1600" height="600" decoding="async" />
             <div class="carousel-caption">
               <div class="container">
                 <div class="row justify-content-start">
@@ -304,7 +215,7 @@
           </div>
 
           <div class="carousel-item">
-            <img class="w-100" src="img/carousel-4.jpg" alt="Quantum technology illustration - lab optics and qubit visualisation" loading="lazy" width="1600" height="600" />
+            <img class="w-100" src="img/carousel-4.jpg" alt="Quantum technology illustration - lab optics and qubit visualisation" loading="lazy" width="1600" height="600" decoding="async" />
             <div class="carousel-caption">
               <div class="container">
                 <div class="row justify-content-end">
@@ -319,7 +230,7 @@
           </div>
 
           <div class="carousel-item">
-            <img class="w-100" src="img/carousel-3.jpg" alt="Cyber Range & SOC environment with security monitoring" loading="lazy" width="1600" height="600" />
+            <img class="w-100" src="img/carousel-3.jpg" alt="Cyber Range & SOC environment with security monitoring" loading="lazy" width="1600" height="600" decoding="async" />
             <div class="carousel-caption">
               <div class="container">
                 <div class="row justify-content-start">
@@ -345,9 +256,9 @@
         </button>
       </div>
     </div>
-    <!-- Carousel End -->
+    
 
-    <!-- Features Start -->
+    
     <div class="container-fluid py-5">
       <div class="container">
         <div class="row g-0 feature-row">
@@ -393,9 +304,9 @@
         </div>
       </div>
     </div>
-    <!-- Features End -->
+    
 
-    <!-- Feature Two-column Start -->
+    
     <div class="container-fluid feature mt-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container">
         <div class="row g-0">
@@ -464,9 +375,9 @@
         </div>
       </div> 
     </div>
-    <!-- Feature Two-column End -->
+    
 
-    <!-- Service Start -->
+    
     <div class="container-fluid container-service py-5">
       <div class="container pt-5">
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
@@ -564,9 +475,9 @@
         </div>
       </div>
     </div>
-    <!-- Service End -->
+    
 
-    <!-- Appointment / Contact Start -->
+    
     <div class="container-fluid py-5">
       <div class="container">
         <div class="row g-5">
@@ -656,15 +567,15 @@
         </div>
       </div>
     </div>
-    <!-- Appointment End -->
+    
 
-    <!-- Team / About block Start -->
+    
     <section>
       <div class="container-fluid container-team py-5">
         <div class="container pb-5">
           <div class="row g-5 align-items-center mb-5">
             <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
-              <img class="img-fluid w-100" src="img/team-1.jpg" alt="QuantaWave lab team working in the cybersecurity lab" loading="lazy" width="1200" height="800"/>
+              <img class="img-fluid w-100" src="img/team-1.jpg" alt="QuantaWave lab team working in the cybersecurity lab" loading="lazy" width="1200" height="800" decoding="async"/>
             </div>
 
             <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
@@ -684,11 +595,11 @@
         </div>
       </div>
     </section>
-    <!-- Team / About block End -->
+    
 
   </main>
 
-  <!-- Footer Start -->
+  
   <footer class="container-fluid footer position-relative bg-dark text-white-50 py-5" role="contentinfo">
     <div class="container">
       <div class="row g-5 py-5">
@@ -739,9 +650,9 @@
       </div>
     </div>
   </footer>
-  <!-- Footer End -->
+  
 
-  <!-- Copyright Start -->
+  
   <div class="container-fluid copyright bg-dark text-white-50 py-4">
     <div class="container">
       <div class="row">
@@ -751,35 +662,20 @@
       </div>
     </div>
   </div>
-  <!-- Copyright End -->
+  
 
-  <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer integrity="sha384-QJGTjeDVt9637LeJ3Dx31NTMxyLEhlaqLMIQ377VCVyPfP3Z4+7T7t3En4rjHd" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
   <script src="lib/wow/wow.min.js" defer></script>
   <script src="lib/easing/easing.min.js" defer></script>
   <script src="lib/waypoints/waypoints.min.js" defer></script>
   <script src="lib/counterup/counterup.min.js" defer></script>
   <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
 
-  <!-- Template Javascript (deferred) -->
   <script src="js/main.js" defer></script>
-
-  <script>
-    // Small enhancement: hide spinner once window loads
-    window.addEventListener('load', function () {
-      const spinner = document.getElementById('spinner');
-      if (spinner) {
-        spinner.classList.remove('show');
-        spinner.setAttribute('aria-hidden', 'true');
-      }
-      // init wow if available
-      if (window.WOW) { new WOW().init(); }
-    });
-  </script>
+  <script src="js/init.js" defer></script>
 </body>
 
 </html>
