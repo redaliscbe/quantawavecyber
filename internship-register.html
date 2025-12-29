@@ -253,7 +253,43 @@
                       <input type="text" id="int_year" class="form-control" required placeholder="e.g., 3rd year, 5th semester">
                       <div class="invalid-feedback">Please enter your current year / semester.</div>
                     </div>
+                    <!-- Internship Track (NEW) -->
+                      <div class="col-md-6">
+                        <label class="form-label" for="int_track">Internship Track *</label>
+                        <select id="int_track" class="form-select" required>
+                          <option value="">Select internship track...</option>
+                          <option value="Employability">Internship for Employability</option>
+                          <option value="Research Aptitude">Internship for Developing Research Aptitude</option>
+                        </select>
+                        <div class="invalid-feedback">Please select an internship track.</div>
+                      </div>
 
+                      <!-- Internship Level (NEW) -->
+                      <div class="col-md-6">
+                        <label class="form-label" for="int_level">Internship Level *</label>
+                        <select id="int_level" class="form-select" required>
+                          <option value="">Select internship level...</option>
+                          <option value="Level I – Foundation">Level I – Foundation (After Year 1 / During Year 2)</option>
+                          <option value="Level II – Developmental">Level II – Developmental (During Year 2 / After Year 2)</option>
+                          <option value="Level III – Advanced">Level III – Advanced (Final Year)</option>
+                        </select>
+                        <div class="invalid-feedback">Please select an internship level.</div>
+                      </div>
+
+
+
+                      
+                      <!-- Internship Level Guidance (NEW – optional but recommended) -->
+                      <div class="col-12">
+                        <div class="alert alert-info small mb-0">
+                          <strong>Internship Levels:</strong>
+                          <ul class="mb-0">
+                            <li><strong>Level I – Foundation:</strong> Basics, awareness, guided labs</li>
+                            <li><strong>Level II – Developmental:</strong> Skill building, mentored projects</li>
+                            <li><strong>Level III – Advanced:</strong> Capstone / research / industry-grade work</li>
+                          </ul>
+                        </div>
+                      </div>
                     <!-- Internship preferences -->
                     <div class="col-md-6">
                       <label class="form-label" for="int_domain">Preferred Domain *</label>
@@ -484,7 +520,9 @@
           int_mode: document.getElementById('int_mode'),
           int_skills: document.getElementById('int_skills'),
           int_motivation: document.getElementById('int_motivation'),
-          int_consent: document.getElementById('int_consent')
+          int_consent: document.getElementById('int_consent'),
+          int_track: document.getElementById('int_track'),
+          int_level: document.getElementById('int_level')
         };
 
         Object.values(fields).forEach(clearInvalid);
@@ -492,6 +530,8 @@
         let ok = true;
 
         if (!fields.int_name.value.trim()) { markInvalid(fields.int_name); ok = false; }
+        if (!fields.int_track.value) { markInvalid(fields.int_track); ok = false; }
+        if (!fields.int_level.value) { markInvalid(fields.int_level); ok = false; }
         if (!/.+@.+\..+/.test(fields.int_email.value.trim())) { markInvalid(fields.int_email); ok = false; }
         if (!fields.int_phone.value.trim()) { markInvalid(fields.int_phone); ok = false; }
         if (!fields.int_location.value.trim()) { markInvalid(fields.int_location); ok = false; }
@@ -527,6 +567,8 @@
             url.searchParams.set('degree', fields.int_degree.value);
             url.searchParams.set('branch', fields.int_branch.value.trim());
             url.searchParams.set('year', fields.int_year.value.trim());
+            url.searchParams.set('internship_track', fields.int_track.value);
+            url.searchParams.set('internship_level', fields.int_level.value);
             url.searchParams.set('domain', fields.int_domain.value);
             url.searchParams.set('internship_type', fields.int_type.value);
             url.searchParams.set('start_date', fields.int_start.value);
@@ -559,6 +601,10 @@
           'Branch: ' + fields.int_branch.value.trim(),
           'Year / Semester: ' + fields.int_year.value.trim(),
           '',
+          'Internship Track: ' + fields.int_track.value,
+          'Internship Level: ' + fields.int_level.value,  
+          '',
+
           'Preferred Domain: ' + fields.int_domain.value,
           'Internship Type: ' + fields.int_type.value,
           'Preferred Start Date: ' + fields.int_start.value,

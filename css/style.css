@@ -605,3 +605,25 @@
 .copyright a:hover {
     color: var(--bs-primary);
 }
+
+.certification-logos img {
+  max-height: 100px;
+  max-width: 180px;     /* KEY FIX: stops wide logos */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+  filter: grayscale(100%);
+  opacity: 0.9;
+}
+
+.certification-logos img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .certification-logos img {
+    max-height: 48px;
+  }
+}
