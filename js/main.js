@@ -6,6 +6,7 @@
         setTimeout(function () {
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
+                $('#spinner').attr('aria-hidden', 'true');
             }
         }, 1);
     };
@@ -13,7 +14,9 @@
     
     
     // Initiate the wowjs
-    new WOW().init();
+    if (typeof WOW !== 'undefined') {
+        new WOW().init();
+    }
 
 
     // Sticky Navbar

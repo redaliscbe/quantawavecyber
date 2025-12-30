@@ -84,107 +84,6 @@
   }
   </script>
 
-  <style>
-    /* Tiny accessibility helper — keep in template CSS if you prefer */
-    .skip-to-content {
-      position: absolute;
-      left: -999px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-    }
-
-    .skip-to-content:focus {
-      left: 10px;
-      top: 10px;
-      width: auto;
-      height: auto;
-      background: #fff;
-      color: #000;
-      padding: 8px 12px;
-      border-radius: 4px;
-      z-index: 1000;
-      box-shadow: 0 6px 18px rgba(2, 6, 23, .2);
-    }
-
-    /* Attractive icon treatment (keeps existing <i> elements) */
-    .icon-box-primary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .icon-box-primary i,
-    .btn-sm-square i {
-      font-size: 1.35rem;                 /* consistent icon scale */
-      line-height: 1;
-      width: 3.2rem;
-      height: 3.2rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: .9rem;
-      box-shadow: 0 6px 20px rgba(13, 110, 253, 0.14);
-      background: linear-gradient(135deg, rgba(13,110,253,1) 0%, rgba(85,60,255,0.95) 100%);
-      color: #ffffff !important;         /* ensures legibility with icon fonts */
-      transition: transform .18s ease, box-shadow .18s ease;
-    }
-
-    /* accent for feature icons that are "dark" inside those panels */
-    .feature-item .icon-box-primary i,
-    .service-item .icon-box-primary i {
-      width: 3.6rem;
-      height: 3.6rem;
-      border-radius: 12px;
-      font-size: 1.4rem;
-      background: linear-gradient(135deg, rgba(0,0,0,0.08), rgba(0,0,0,0.02));
-      color: #0d6efd !important;
-      box-shadow: none;
-    }
-
-    /* small hover lift */
-    .icon-box-primary i:hover,
-    .btn-sm-square i:hover {
-      transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 14px 28px rgba(13,110,253,0.16);
-    }
-
-    /* make social buttons circular and consistent */
-    .btn-sm-square {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 10px;
-      text-decoration: none;
-      transition: transform .18s ease;
-    }
-
-    .btn-sm-square:hover {
-      transform: translateY(-3px);
-      text-decoration: none;
-    }
-
-    /* Respect reduced-motion preferences */
-    @media (prefers-reduced-motion: reduce) {
-      .icon-box-primary i,
-      .btn-sm-square i,
-      .btn-sm-square {
-        transition: none;
-      }
-    }
-
-    /* small responsive tweaks for very narrow screens */
-    @media (max-width: 420px) {
-      .icon-box-primary i {
-        width: 2.8rem;
-        height: 2.8rem;
-        font-size: 1.15rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -269,8 +168,8 @@
   <!-- Main content container -->
   <main id="main" tabindex="-1" role="main" aria-label="Main content">
 
-<!-- HERO -->
-<div class="container-fluid bg-primary py-5 mb-5">
+  <!-- HERO -->
+  <div class="container-fluid bg-primary py-5 mb-5">
   <div class="container py-5">
     <h1 class="display-5 text-white mb-3">
       Advanced Executive Program in Cybersecurity (AEPC)
@@ -283,9 +182,9 @@
 
 <!-- PROGRAM OVERVIEW -->
 <div class="container py-5">
-  <div class="row g-5 align-items-center">
-    <div class="col-lg-6">
-      <h2>Program Overview</h2>
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <h2>Program Overview</h2>
       <p>
         The <strong>Advanced Executive Program in Cybersecurity (AEPC)</strong> is a
         six-month, industry-integrated executive program designed to equip professionals
@@ -296,9 +195,9 @@
       </p>
       <p>
         The curriculum is aligned with global technology leaders including
-        :contentReference[oaicite:0]{index=0},
-        :contentReference[oaicite:1]{index=1} and
-        :contentReference[oaicite:2]{index=2}, covering network security,
+        Palo Alto Networks,
+        Cisco Systems and
+        IBM, covering network security,
         SOC operations, cloud and endpoint security, digital forensics, cryptography,
         and AI-driven cybersecurity.
       </p>
@@ -309,14 +208,13 @@
       </p>
     </div>
     <div class="col-lg-6">
-      <img src="img/aepc-overview.jpg" class="img-fluid rounded shadow"
-           alt="Cybersecurity training using real equipment and SOC labs">
+      <img src="img/aepc-overview.jpg" class="img-fluid rounded shadow" alt="Cybersecurity training using real equipment and SOC labs">
     </div>
   </div>
 </div>
 
-<!-- PROGRAM SUMMARY -->
-<div class="container-fluid bg-light py-5">
+  <!-- PROGRAM SUMMARY -->
+  <div class="container-fluid bg-light py-5">
   <div class="container">
     <h2 class="text-center mb-4">Program Summary</h2>
     <div class="row g-4">
@@ -337,14 +235,13 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
 
-<!-- FACULTY & MENTORSHIP -->
-<div class="container py-5">
+  <!-- FACULTY & MENTORSHIP -->
+  <div class="container py-5">
   <div class="row g-5 align-items-center">
     <div class="col-lg-6">
-      <img src="img/aepc-faculty.jpg" class="img-fluid rounded shadow"
-           alt="Industry experts and academic mentors delivering cybersecurity training">
+      <img src="img/aepc-faculty.jpg" class="img-fluid rounded shadow" alt="Industry experts and academic mentors delivering cybersecurity training">
     </div>
     <div class="col-lg-6">
       <h2>Faculty & Mentorship</h2>
@@ -356,10 +253,27 @@
       </p>
     </div>
   </div>
-</div>
+  </div>
 
-<!-- ELIGIBILITY -->
-<div class="container-fluid bg-light py-5">
+  <!-- WHO SHOULD ENROLL -->
+  <div class="container py-5">
+  <h2 class="mb-4">Who Should Enroll?</h2>
+  <p>
+    The <strong>Advanced Executive Program in Cybersecurity (AEPC)</strong> is
+    designed for learners and professionals seeking structured, hands-on
+    cybersecurity expertise aligned with real-world industry requirements.
+  </p>
+  <ul>
+    <li>Final-year UG / PG students aspiring for SOC and cybersecurity roles</li>
+    <li>Working IT professionals transitioning into cybersecurity domains</li>
+    <li>Network and system administrators seeking security specialization</li>
+    <li>Cloud, DevOps, and infrastructure engineers upgrading security skills</li>
+    <li>Researchers aiming for applied cybersecurity research and publications</li>
+  </ul>
+  </div>
+
+  <!-- ELIGIBILITY -->
+  <div class="container-fluid bg-light py-5">
   <div class="container">
     <h2>Eligibility</h2>
     <ul>
@@ -367,6 +281,38 @@
       <li>Working professionals in IT, Networking, Systems or Security roles</li>
       <li>Basic knowledge of networking and operating systems is recommended</li>
     </ul>
+  </div>
+</div>
+
+<!-- CAREER OUTCOMES -->
+<div class="container-fluid bg-light py-5">
+  <div class="container">
+    <h2 class="mb-4">Career Outcomes & Job Roles</h2>
+    <p>
+      AEPC prepares participants for in-demand cybersecurity roles aligned with
+      enterprise environments and technologies used by
+      Palo Alto Networks,
+      Cisco Systems and
+      IBM.
+    </p>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <ul>
+          <li>SOC Analyst (Tier 1 / Tier 2)</li>
+          <li>Cybersecurity Analyst</li>
+          <li>Network Security Engineer</li>
+          <li>Cloud Security Associate</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li>Incident Response Analyst</li>
+          <li>Junior Digital Forensics Analyst</li>
+          <li>Cybersecurity Operations Engineer</li>
+          <li>Cybersecurity Research Associate</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -394,6 +340,24 @@
   </div>
 </div>
 
+<!-- TOOLS & PLATFORMS -->
+<div class="container py-5">
+  <h2 class="mb-4">Tools & Platforms You Will Work On</h2>
+  <p>
+    The program emphasizes <strong>equipment-based and lab-driven learning</strong>,
+    enabling participants to work with tools and platforms commonly used in
+    enterprise SOC and security operations.
+  </p>
+  <ul>
+    <li>Next-Generation Firewalls and enterprise security appliances</li>
+    <li>SOC monitoring dashboards and SIEM platforms</li>
+    <li>Threat intelligence feeds and log analysis systems</li>
+    <li>Cyber range environments for attack–defense simulations</li>
+    <li>Cloud security labs covering IAM, logging, and monitoring</li>
+    <li>Digital forensics and incident investigation toolkits</li>
+  </ul>
+</div>
+
 
 <!-- Certification Partners -->
 <div class="container py-4">
@@ -408,19 +372,15 @@
     <div class="col-6 col-md-2 text-center">
       <img src="img/certifications/ibm.png" alt="IBM Professional Certification">
     </div>
-    
   </div>
 </div>
 
+  <!-- SYLLABUS -->
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Detailed Syllabus</h2>
 
-
-<!-- SYLLABUS -->
-<!-- SYLLABUS -->
-<div class="container py-5">
-  <h2 class="text-center mb-4">Detailed Syllabus</h2>
-
-  <h3>Module 1: Palo Alto Networks – Cybersecurity Practitioner (PCCSP)</h3>
-  <ul>
+    <h3>Module 1: Palo Alto Networks – Cybersecurity Practitioner (PCCSP)</h3>
+    <ul>
     <li>Foundations of cybersecurity principles, threat actors, and attack vectors</li>
     <li>Understanding the modern cyber threat landscape and attack lifecycle</li>
     <li>Enterprise network, endpoint, and application security concepts</li>
@@ -439,45 +399,99 @@
     <li>SOC workflows, alert triage, and escalation procedures</li>
     <li>Incident detection, analysis, containment, and response strategies</li>
     <li>Introduction to security automation and operational tools</li>
-  </ul>
+    </ul>
 
-  <h3>Module 3: IBM Professional Certifications</h3>
+    <h3>Module 3: IBM Professional Certifications</h3>
   <ul>
     <li>Generative AI fundamentals and cybersecurity use-cases</li>
     <li>AI ethics, bias, trust, and security considerations</li>
     <li>Cryptography principles, encryption mechanisms, and key management</li>
     <li>Digital forensics essentials including evidence collection and analysis</li>
     <li>Legal, regulatory, and ethical considerations in cyber investigations</li>
-  </ul>
+    </ul>
 
-  <h3>Module 4: Capstone Project</h3>
+    <h3>Module 4: Capstone Project</h3>
   <ul>
     <li>Problem identification based on real-world cybersecurity use cases</li>
     <li>Design and implementation using industry-standard tools and frameworks</li>
     <li>Threat analysis, solution deployment, and validation</li>
     <li>Technical documentation and project presentation</li>
   </ul>
+  <!-- CAPSTONE PROJECT SAMPLES -->
+  <h4 class="mt-4">Sample Capstone Project Themes</h4>
+  <ul>
+    <li>Design and Deployment of a Mini SOC for SME Environments</li>
+    <li>Zero Trust Security Architecture for Hybrid Enterprises</li>
+    <li>AI-Driven Phishing Detection and Email Threat Analysis</li>
+    <li>Network Traffic Anomaly Detection using Machine Learning</li>
+    <li>Incident Response Framework for Ransomware Attacks</li>
+    <li>Cloud Security Posture Assessment for Multi-Cloud Infrastructure</li>
+    </ul>
 
-  <h3>Module 5: Internship – Industry Immersion Program</h3>
+    <h3>Module 5: Internship – Industry Immersion Program</h3>
   <ul>
     <li>Live SOC exposure and enterprise security operations</li>
     <li>Hands-on experience with monitoring, incident handling, and reporting</li>
     <li>Cyber clinic participation and real-time threat response</li>
     <li>Industry mentorship and performance evaluation</li>
   </ul>
+  <!-- INTERNSHIP VALUE -->
+  <h4 class="mt-4">Internship Value Proposition</h4>
+  <p>
+    The internship is designed as an <strong>active industry immersion</strong>,
+    not an observational exercise. Participants engage directly with live SOC
+    workflows under expert supervision.
+  </p>
+  <ul>
+    <li>Hands-on SOC monitoring, alert triage, and incident handling</li>
+    <li>Participation in cyber clinics and real-time threat response</li>
+    <li>Mentorship by industry professionals</li>
+    <li>Internship Completion Certificate and performance evaluation</li>
+    <li>Letter of Recommendation for high-performing participants</li>
+    </ul>
 
-  <h3>Module 6: Research Paper Writing & Publication</h3>
-<ul>
-  <li>Identification of research problems in cybersecurity domains</li>
-  <li>Systematic literature review and gap analysis</li>
-  <li>Research methodology, experimentation, and validation</li>
-  <li>Technical writing structure for scholarly publications</li>
-  <li>Formatting and ethical compliance for IEEE / Scopus-indexed journals</li>
-  <li>Guided paper submission and reviewer response practices</li>
-</ul>
+    <h3>Module 6: Research Paper Writing & Publication</h3>
+    <ul>
+      <li>Identification of research problems in cybersecurity domains</li>
+      <li>Systematic literature review and gap analysis</li>
+      <li>Research methodology, experimentation, and validation</li>
+      <li>Technical writing structure for scholarly publications</li>
+      <li>Formatting and ethical compliance for IEEE / Scopus-indexed journals</li>
+      <li>Guided paper submission and reviewer response practices</li>
+    </ul>
+  </div>
 
+  <!-- RESEARCH ADVANTAGE -->
+  <div class="container-fluid bg-light py-5">
+  <div class="container">
+    <h2 class="mb-4">Research & Publication Advantage</h2>
+    <p>
+      AEPC uniquely integrates <strong>applied research mentoring</strong> into
+      an executive cybersecurity program, enabling participants to build both
+      industry and academic credentials.
+    </p>
+    <ul>
+      <li>Convert capstone or internship work into research publications</li>
+      <li>Guidance for IEEE and Scopus-indexed journals and conferences</li>
+      <li>Research methodology, experimentation, and validation support</li>
+      <li>Academic writing, plagiarism ethics, and reviewer response training</li>
+      <li>Ideal pathway for PhD aspirants and research-oriented professionals</li>
+    </ul>
+  </div>
 </div>
 
+<!-- LEARNING EXPERIENCE SNAPSHOT -->
+<div class="container py-5 text-center">
+  <h2 class="mb-4">Learning Experience at a Glance</h2>
+  <div class="row g-4">
+    <div class="col-md-4">🧠 Expert-Led Concept Sessions</div>
+    <div class="col-md-4">🛠️ Equipment-Based Hands-On Labs</div>
+    <div class="col-md-4">🖥️ Live SOC & Cyber Range Exposure</div>
+    <div class="col-md-4">📊 Industry Case Studies</div>
+    <div class="col-md-4">🎓 Certification-Aligned Curriculum</div>
+    <div class="col-md-4">🧪 Research & Publication Mentorship</div>
+  </div>
+</div>
 
 <!-- CTA -->
 <div class="container py-5 text-center">
@@ -486,16 +500,12 @@
     AEPC is designed for professionals seeking industry-led instruction,
     equipment-based learning, certification alignment, and research exposure.
   </p>
-   <a href="downloads/PCP-CAI-Syllabus.pdf"
-      class="btn btn-outline-primary me-3" download>
-      Download Syllabus (PDF)
-   </a>
-
-   <a href="contact.html"
-      class="btn btn-primary">
-      Enquire Now
-   </a>
-
+  <a href="downloads/PCP-CAI-Syllabus.pdf" class="btn btn-outline-primary me-3" download>
+    Download Syllabus (PDF)
+  </a>
+  <a href="contact.html" class="btn btn-primary">
+    Enquire Now
+  </a>
 </div>
 
   </main>
@@ -580,19 +590,6 @@
 
   <!-- Template Javascript (deferred) -->
   <script src="js/main.js" defer></script>
-
-  <script>
-    // Small enhancement: hide spinner once window loads
-    window.addEventListener('load', function () {
-      const spinner = document.getElementById('spinner');
-      if (spinner) {
-        spinner.classList.remove('show');
-        spinner.setAttribute('aria-hidden', 'true');
-      }
-      // init wow if available
-      if (window.WOW) { new WOW().init(); }
-    });
-  </script>
 </body>
 
 </html>
