@@ -1,17 +1,17 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>QuantaWave Cyber R&amp;D Lab</title>
+  <title>Quantum R&D Lab â€” QuantaWave Cyber R&D Lab</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Quantum and Cybersecurity R&D — QuantaWave Cyber" />
-  <meta name="keywords" content="quantum, cybersecurity, R&D, HPC, QKD" />
+  <meta name="description" content="Quantum research and prototyping at QuantaWave: QKD, quantum algorithms, and hardware-software integration for applied research." />
+  <meta name="keywords" content="quantum research, QKD, quantum algorithms, QuantaWave" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
   <!-- Fonts (preconnect + load) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,7 +30,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Site styles -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 
   <style>
     /* Small inline critical styles to avoid FOUC for spinner/back-to-top */
@@ -49,10 +49,13 @@
   </div>
 
   <!-- Brand (visible on large screens) -->
-  <header class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
-    <div class="container">
+  <header class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner" aria-label="QuantaWave brand banner">
+    <div class="container pb-2">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="h1 text-white mb-0">QuantaWave Cyber R&amp;D Lab</a>
+        <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+          <img src="img/logo1.png" alt="QuantaWave Cyber R&D Lab Logo" width="60" height="70" class="me-3" />
+          <span class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</span>
+        </a>
       </div>
     </div>
   </header>
@@ -61,7 +64,7 @@
   <div>
     <div class="container-fluid sticky-top" role="navigation" aria-label="Main navigation">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3" aria-label="Primary">
           <a href="index.html" class="navbar-brand d-lg-none">
             <h1 class="text-primary m-0">QuantaWave Cyber R&D Lab</h1>
           </a>
@@ -72,17 +75,26 @@
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-              <a href="index.html" class="nav-item nav-link" aria-current="page">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="aboutus.html" class="nav-item nav-link">About</a>
               <a href="research.html" class="nav-item nav-link">Research</a>
               <div class="nav-item dropdown">
-                <a href="crdlab.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
-                <div class="dropdown-menu bg-light m-0">
+                <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="servicesDropdown" aria-expanded="false">Services</a>
+                <div class="dropdown-menu bg-light m-0" aria-labelledby="servicesDropdown">
                   <a href="crdlab.html" class="dropdown-item">Cybersecurity R&D Lab</a>
                   <a href="qrdlab.html" class="dropdown-item">Quantum R&D Lab</a>
                   <a href="ai-lab.html" class="dropdown-item">AI & Cyber Analytics Lab</a>
                   <a href="hpc.html" class="dropdown-item">HPC</a>
                   <a href="testbed.html" class="dropdown-item">Testbed Access</a>
+                 
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="academy.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="academyDropdown" aria-expanded="false">Academy</a>
+                <div class="dropdown-menu bg-light m-0" aria-labelledby="academyDropdown">
+                  <a href="aepc.html" class="dropdown-item">Advanced Executive Program in Cybersecurity (AEPC)</a>
+                  <a href="pcpc.html" class="dropdown-item">Professional Certificate Program in Cybersecurity (PCPC)</a>
+                  <a href="pcp-cai.html" class="dropdown-item">Professional Certificate Program in Cybersecurity & AI (PCP-CAI)</a>
                 </div>
               </div>
               <a href="events.html" class="nav-item nav-link">Events</a>
@@ -92,9 +104,9 @@
             </div>
 
             <div class="ms-auto d-none d-lg-flex">
-              <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"> <i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a>
-              <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+              <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
             </div>
           </div>
         </nav>
@@ -106,13 +118,25 @@
   <main>
     <section id="quantum-rd" class="py-5">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold">Quantum R&amp;D Lab</h2>
-          <p class="text-muted">
-            <em>Quantawave </em> Quantum R&amp;D Lab pursues research and prototyping across quantum computing, quantum-safe communications,
-            and hybrid quantum-classical systems — preparing industry and academia for the quantum era.
-          </p>
-        </div>
+        
+        <div class="col-lg-7">
+            <h1 class="display-5 fw-bold">Quantum R&amp;D Lab</h1>
+            <p class="lead">
+              <em>Quantawave</em> Quantum R&amp;D Lab advances applied research in quantum computing,
+              quantum algorithms, quantum-safe cryptography, QKD, and hybrid
+              quantum–classical systems for next-generation technologies.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a class="btn btn-primary btn-lg" href="#access">
+                <i class="bi bi-lock-fill me-2"></i>Request Lab Access
+              </a>
+              <a class="btn btn-outline-secondary btn-lg" href="#projects">
+                <i class="bi bi-journal-code me-2"></i>View Research Areas
+              </a>
+            </div>
+          </div>
+
+        
 
         <div class="row g-4">
           <!-- Card: Quantum Computing Research -->
@@ -216,7 +240,120 @@
         </div>
       </div>
     </section>
+    <!-- FAQ SECTION START -->
+    <section id="faq" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Frequently Asked Questions (FAQ)</h2>
+          <p class="text-muted">
+            Common questions about research focus, access, and collaboration at the Quantum R&amp;D Lab.
+          </p>
+        </div>
+
+        <div class="accordion accordion-flush" id="faqAccordion">
+
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="qfaqOne">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#qfaqCollapseOne"
+                      aria-expanded="false" aria-controls="qfaqCollapseOne">
+                Who can access the Quantum R&amp;D Lab?
+              </button>
+            </h2>
+            <div id="qfaqCollapseOne" class="accordion-collapse collapse"
+                aria-labelledby="qfaqOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Access is available to faculty members, research scholars, postgraduate students,
+                industry collaborators, and approved interns working on quantum computing
+                and quantum communication projects.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="qfaqTwo">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#qfaqCollapseTwo"
+                      aria-expanded="false" aria-controls="qfaqCollapseTwo">
+                What research areas does the Quantum R&amp;D Lab focus on?
+              </button>
+            </h2>
+            <div id="qfaqCollapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="qfaqTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                The lab focuses on quantum computing, quantum algorithms, quantum cryptography,
+                post-quantum cryptography, quantum key distribution (QKD),
+                quantum machine learning, and hybrid quantum-classical systems.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="qfaqThree">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#qfaqCollapseThree"
+                      aria-expanded="false" aria-controls="qfaqCollapseThree">
+                Does the lab support industry and government collaboration?
+              </button>
+            </h2>
+            <div id="qfaqCollapseThree" class="accordion-collapse collapse"
+                aria-labelledby="qfaqThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes. The lab actively supports industry and government collaborations,
+                including joint research, feasibility studies, pilot deployments,
+                secure communication experiments, and applied quantum prototyping.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="qfaqFour">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#qfaqCollapseFour"
+                      aria-expanded="false" aria-controls="qfaqCollapseFour">
+                Is prior knowledge of quantum computing required?
+              </button>
+            </h2>
+            <div id="qfaqCollapseFour" class="accordion-collapse collapse"
+                aria-labelledby="qfaqFour" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Prior exposure to linear algebra, probability, or classical computing is helpful,
+                but not mandatory. Structured onboarding and guided research pathways
+                are provided for students and collaborators new to quantum technologies.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="qfaqFive">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#qfaqCollapseFive"
+                      aria-expanded="false" aria-controls="qfaqCollapseFive">
+                How can I request access or propose a quantum research project?
+              </button>
+            </h2>
+            <div id="qfaqCollapseFive" class="accordion-collapse collapse"
+                aria-labelledby="qfaqFive" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Interested participants can contact the Lab Director directly
+                or submit a proposal through the Lab Access Form.
+                Proposals are evaluated based on feasibility, relevance,
+                and potential academic or industry impact.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- FAQ SECTION END -->
   </main>
+
 
   <!-- Footer -->
  <footer class="container-fluid footer position-relative bg-dark text-white-50 py-5">
@@ -283,7 +420,7 @@
   <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
 
   <!-- Template JS -->
-  <script src="js/main.js" defer></script>
+  <script src="js/main.min.js" defer></script>
 
   <script>
     // Minimal inline script to hide spinner when page loads and show back-to-top
@@ -300,3 +437,5 @@
   </script>
 </body>
 </html>
+
+

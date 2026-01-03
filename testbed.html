@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>QuantaWave Cyber R&D Lab — Testbed Access</title>
+  <title>QuantaWave Cyber R&D Lab â€” Testbed Access</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="QuantaWave, testbed, cyber range, IoT testbed, SCADA simulation, HPC testbed">
-  <meta name="description" content="QuantaWave Cyber Testbed: controlled, scalable, high-fidelity environments to simulate, evaluate and validate cybersecurity, network, IoT and cyber-physical systems.">
+   <meta name="description" content="Access secure testbeds at QuantaWave for cybersecurity experiments, validation and collaborative projects. Request lab access and collaboration.">
   <link rel="canonical" href="https://quantawavecyber.com/testbed.html">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Testbed Access — QuantaWave Cyber R&D Lab">
+  <meta property="og:title" content="Testbed Access â€” QuantaWave Cyber R&D Lab">
   <meta property="og:description" content="Controlled, scalable and high-fidelity testbeds for cybersecurity and systems validation.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://quantawavecyber.com/testbed.html">
@@ -18,7 +18,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
 
   <!-- Bootstrap & Template -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 
   <style>
     /* accessibility helper for keyboard users */
@@ -64,7 +64,7 @@
   <a class="skip-to-content" href="#main">Skip to main content</a>
 
   <!-- Spinner Start -->
-  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" aria-hidden="false">
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" aria-hidden="true" aria-label="Loading">
     <div class="spinner-border text-primary" role="status" style="width:3rem; height:3rem;">
       <span class="visually-hidden">Loading...</span>
     </div>
@@ -72,10 +72,13 @@
   <!-- Spinner End -->
 
   <!-- Brand -->
-  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner">
+  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner" aria-label="QuantaWave brand banner">
     <div class="container pb-2">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="h1 text-white mb-0">QuantaWave Cyber R&D Lab</a>
+        <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+          <img src="img/logo1.png" alt="QuantaWave Cyber R&D Lab Logo" width="60" height="70" class="me-3" />
+          <span class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</span>
+        </a>
       </div>
     </div>
   </div>
@@ -84,7 +87,7 @@
   <div>
     <div class="container-fluid sticky-top" role="navigation" aria-label="Main navigation">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3" aria-label="Primary">
           <a href="index.html" class="navbar-brand d-lg-none">
             <h1 class="text-primary m-0">QuantaWave Cyber R&D Lab</h1>
           </a>
@@ -95,17 +98,26 @@
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-              <a href="index.html" class="nav-item nav-link" aria-current="page">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="aboutus.html" class="nav-item nav-link">About</a>
               <a href="research.html" class="nav-item nav-link">Research</a>
               <div class="nav-item dropdown">
-                <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                <div class="dropdown-menu bg-light m-0">
+                <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="servicesDropdown" aria-expanded="false">Services</a>
+                <div class="dropdown-menu bg-light m-0" aria-labelledby="servicesDropdown">
                   <a href="crdlab.html" class="dropdown-item">Cybersecurity R&D Lab</a>
                   <a href="qrdlab.html" class="dropdown-item">Quantum R&D Lab</a>
                   <a href="ai-lab.html" class="dropdown-item">AI & Cyber Analytics Lab</a>
                   <a href="hpc.html" class="dropdown-item">HPC</a>
-                  <a href="testbed.html" class="dropdown-item active">Testbed Access</a>
+                  <a href="testbed.html" class="dropdown-item">Testbed Access</a>
+                 
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="academy.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="academyDropdown" aria-expanded="false">Academy</a>
+                <div class="dropdown-menu bg-light m-0" aria-labelledby="academyDropdown">
+                  <a href="aepc.html" class="dropdown-item">Advanced Executive Program in Cybersecurity (AEPC)</a>
+                  <a href="pcpc.html" class="dropdown-item">Professional Certificate Program in Cybersecurity (PCPC)</a>
+                  <a href="pcp-cai.html" class="dropdown-item">Professional Certificate Program in Cybersecurity & AI (PCP-CAI)</a>
                 </div>
               </div>
               <a href="events.html" class="nav-item nav-link">Events</a>
@@ -115,9 +127,9 @@
             </div>
 
             <div class="ms-auto d-none d-lg-flex">
-              <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"> <i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a>
-              <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+              <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
             </div>
           </div>
         </nav>
@@ -130,9 +142,28 @@
     <!-- Testbed Access Grid -->
     <section id="testbed-access" class="py-5">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold">Testbed Access</h2>
-          <p class="text-muted">QuantaWave Cyber Testbed provides controlled, scalable and high-fidelity environments to simulate, evaluate, and validate cybersecurity, network, IoT and cyber-physical systems.</p>
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h1 class="display-5 fw-bold">Testbed Access</h1>
+
+            <p class="lead mb-4">
+              <em>Quantawave</em> Testbed provides controlled, scalable, and high-fidelity
+              environments to simulate, evaluate, and validate cybersecurity,
+              network, IoT, cloud, and cyber-physical systems.
+            </p>
+
+            <!-- BUTTONS -->
+            <div class="d-flex gap-3 flex-wrap mb-4">
+              <a class="btn btn-primary btn-lg" href="#access">
+                <i class="bi bi-lock-fill me-2"></i>Request Testbed Access
+              </a>
+
+              <a class="btn btn-outline-secondary btn-lg" href="#projects">
+                <i class="bi bi-journal-code me-2"></i>View Testbed Capabilities
+              </a>
+            </div>
+            <!-- ONE LINE SPACE IS CREATED HERE -->
+          </div>
         </div>
 
         <div class="row g-4">
@@ -238,6 +269,119 @@
         </div>
       </div>
     </section>
+<!-- FAQ SECTION START -->
+    <section id="faq" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Frequently Asked Questions (FAQ)</h2>
+          <p class="text-muted">
+            Common questions about testbed access, usage policies, and supported environments at QuantaWave.
+          </p>
+        </div>
+
+        <div class="accordion accordion-flush" id="faqAccordion">
+
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tbFaqOne">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#tbFaqCollapseOne"
+                      aria-expanded="false" aria-controls="tbFaqCollapseOne">
+                Who can request access to the Testbed?
+              </button>
+            </h2>
+            <div id="tbFaqCollapseOne" class="accordion-collapse collapse"
+                aria-labelledby="tbFaqOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Testbed access is available to faculty members, research scholars,
+                postgraduate students, industry partners, and approved interns
+                engaged in cybersecurity, networking, IoT, or cyber-physical research.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tbFaqTwo">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#tbFaqCollapseTwo"
+                      aria-expanded="false" aria-controls="tbFaqCollapseTwo">
+                What types of testbeds are available?
+              </button>
+            </h2>
+            <div id="tbFaqCollapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="tbFaqTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                The Testbed includes cyber ranges, network and cloud testbeds,
+                IoT and cyber-physical systems, SCADA/ICS simulations,
+                zero-trust validation labs, and performance and stress-testing environments.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tbFaqThree">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#tbFaqCollapseThree"
+                      aria-expanded="false" aria-controls="tbFaqCollapseThree">
+                Is the Testbed isolated from production systems?
+              </button>
+            </h2>
+            <div id="tbFaqCollapseThree" class="accordion-collapse collapse"
+                aria-labelledby="tbFaqThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes. All testbed environments are fully isolated,
+                controlled, and instrumented to ensure safe experimentation
+                without impacting production networks or external systems.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tbFaqFour">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#tbFaqCollapseFour"
+                      aria-expanded="false" aria-controls="tbFaqCollapseFour">
+                Can industry partners use the Testbed for validation and pilots?
+              </button>
+            </h2>
+            <div id="tbFaqCollapseFour" class="accordion-collapse collapse"
+                aria-labelledby="tbFaqFour" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes. Industry partners can use the Testbed for
+                proof-of-concept validation, security assessment,
+                pilot deployments, tool benchmarking, and compliance testing
+                under defined collaboration agreements.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="tbFaqFive">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#tbFaqCollapseFive"
+                      aria-expanded="false" aria-controls="tbFaqCollapseFive">
+                How do I request Testbed access or propose an experiment?
+              </button>
+            </h2>
+            <div id="tbFaqCollapseFive" class="accordion-collapse collapse"
+                aria-labelledby="tbFaqFive" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Access requests and experiment proposals can be submitted
+                via the Lab Access Form or by contacting the Director.
+                Requests are evaluated based on scope, feasibility,
+                safety, and research or industry relevance.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+<!-- FAQ SECTION END -->
 
   </main>
 
@@ -313,7 +457,7 @@
   <script src="lib/waypoints/waypoints.min.js" defer></script>
   <script src="lib/counterup/counterup.min.js" defer></script>
   <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <script src="js/main.min.js" defer></script>
 
   <script>
     // hide spinner and init WOW when page fully loads
@@ -330,3 +474,5 @@
   </script>
 </body>
 </html>
+
+

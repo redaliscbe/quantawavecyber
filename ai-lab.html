@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>QuantaWave Cyber R&D Lab — Cybersecurity • HPC • Quantum</title>
+  <title>AI & Cyber Analytics Lab â€” QuantaWave Cyber R&D Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="cybersecurity, quantum computing, HPC, cyber range, QKD, post-quantum cryptography, R&D, testbed" />
-  <meta name="description" content="QuantaWave Cyber R&D Lab — applied research in cybersecurity, high-performance computing (HPC) and quantum technologies. Testbeds, prototyping, training and industry partnerships." />
+  <meta name="keywords" content="AI lab, cyber analytics, machine learning, security analytics, QuantaWave" />
+  <meta name="description" content="AI & Cyber Analytics research at QuantaWave: machine learning for security, anomaly detection, and data-driven threat analysis." />
   <link rel="canonical" href="https://quantawavecyber.com/" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="QuantaWave Cyber R&D Lab" />
-  <meta property="og:title" content="QuantaWave Cyber R&D Lab — Cybersecurity • HPC • Quantum" />
+  <meta property="og:title" content="QuantaWave Cyber R&D Lab â€” Cybersecurity â€¢ HPC â€¢ Quantum" />
   <meta property="og:description" content="Applied research and testbeds for cybersecurity, quantum technologies and high-performance computing. Partnership, internships and productisation support." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://quantawavecyber.com/" />
@@ -19,7 +19,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="manifest" href="img/favicon_io/site.webmanifest" />
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
@@ -37,7 +37,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Template stylesheet -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style.min.css" rel="stylesheet" />
 
   <!-- Structured data (Organization) -->
   <script type="application/ld+json">
@@ -62,7 +62,7 @@
   </script>
 
   <style>
-    /* Tiny accessibility helper — keep in template CSS if you prefer */
+    /* Tiny accessibility helper â€” keep in template CSS if you prefer */
     .skip-to-content { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; }
     .skip-to-content:focus { left:10px; top:10px; width:auto; height:auto; background:#fff; color:#000; padding:8px 12px; border-radius:4px; z-index:1000; box-shadow:0 6px 18px rgba(2,6,23,.2); }
     /* minor spinner transition helper (keeps visual identical) */
@@ -82,10 +82,13 @@
   <!-- Spinner End -->
 
   <!-- Brand Start -->
-  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner">
+  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner" aria-label="QuantaWave brand banner">
     <div class="container pb-2">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</a>
+        <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+          <img src="img/logo1.png" alt="QuantaWave Cyber R&D Lab Logo" width="60" height="70" class="me-3" />
+          <span class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</span>
+        </a>
       </div>
     </div>
   </div>
@@ -95,7 +98,7 @@
   <div>
     <div class="container-fluid sticky-top" role="navigation" aria-label="Main navigation">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3" aria-label="Primary">
           <a href="index.html" class="navbar-brand d-lg-none">
             <h1 class="text-primary m-0">QuantaWave Cyber R&D Lab</h1>
           </a>
@@ -105,17 +108,25 @@
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-              <a href="index.html" class="nav-item nav-link" aria-current="page">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="aboutus.html" class="nav-item nav-link">About</a>
               <a href="research.html" class="nav-item nav-link">Research</a>
               <div class="nav-item dropdown">
-                <a href="crdlab.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
-                <div class="dropdown-menu bg-light m-0">
+                <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="servicesDropdown" aria-expanded="false">Services</a>
+                <div class="dropdown-menu bg-light m-0" aria-labelledby="servicesDropdown">
                   <a href="crdlab.html" class="dropdown-item">Cybersecurity R&D Lab</a>
                   <a href="qrdlab.html" class="dropdown-item">Quantum R&D Lab</a>
                   <a href="ai-lab.html" class="dropdown-item">AI & Cyber Analytics Lab</a>
                   <a href="hpc.html" class="dropdown-item">HPC</a>
                   <a href="testbed.html" class="dropdown-item">Testbed Access</a>
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="academy.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="academyDropdown" aria-expanded="false">Academy</a>
+                <div class="dropdown-menu bg-light m-0" aria-labelledby="academyDropdown">
+                  <a href="aepc.html" class="dropdown-item">Advanced Executive Program in Cybersecurity (AEPC)</a>
+                  <a href="pcpc.html" class="dropdown-item">Professional Certificate Program in Cybersecurity (PCPC)</a>
+                  <a href="pcp-cai.html" class="dropdown-item">Professional Certificate Program in Cybersecurity & AI (PCP-CAI)</a>
                 </div>
               </div>
               <a href="events.html" class="nav-item nav-link">Events</a>
@@ -143,7 +154,7 @@
     <section class="row align-items-center mb-5">
       <div class="col-lg-7">
         <h1 class="display-5 fw-bold">AI & Cyber Analytics Lab</h1>
-        <p class="lead">Interdisciplinary lab for threat analytics, adversarial AI research, SOC automation and cyber resilience — combining AI, ML and security telemetry analysis.</p>
+        <p class="lead">Interdisciplinary lab for threat analytics, adversarial AI research, SOC automation and cyber resilience â€” combining AI, ML and security telemetry analysis.</p>
         <div class="d-flex gap-3 flex-wrap">
           <a class="btn btn-primary btn-lg" href="#access"><i class="bi bi-lock-fill me-2"></i>Request Lab Access</a>
           <a class="btn btn-outline-secondary btn-lg" href="#projects"><i class="bi bi-journal-code me-2"></i>View Projects</a>
@@ -282,8 +293,8 @@
       <h2 class="h4 mb-3">Publications & Collaborations</h2>
       <p class="small">Recent publications and collaboration briefs are available on request. The lab partners with industry SOC teams and research groups for joint prototyping and field trials.</p>
       <ul>
-        <li>Joint SOC trial with industry partner (2024) — anomaly detection pipeline</li>
-        <li>Conference paper (2023) — </li>
+        <li>Joint SOC trial with industry partner (2024) â€” anomaly detection pipeline</li>
+        <li>Conference paper (2023) â€” </li>
       </ul>
     </section> -->
 
@@ -416,7 +427,7 @@
   <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
 
   <!-- Template Javascript (deferred) -->
-  <script src="js/main.js" defer></script>
+  <script src="js/main.min.js" defer></script>
 
   <script>
     // Hide spinner reliably and init animations when page has fully loaded
@@ -433,3 +444,5 @@
 
 </body>
 </html>
+
+

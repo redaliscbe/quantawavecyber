@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>QuantaWave Cyber R&D Lab</title>
+  <title>Events & Workshops â€” QuantaWave Cyber R&D Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
+  <meta name="keywords" content="events, workshops, seminars, cybersecurity training, QuantaWave">
+  <meta name="description" content="Stay updated on QuantaWave events: workshops, seminars and training programs in cybersecurity, quantum technologies and HPC." />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
   <!-- Fonts & icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -21,13 +21,11 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Libraries -->
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Libraries (removed unused CSS to reduce payload) -->
 
   <!-- Core styles -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 
   <style>
     /* small page-specific helpers (kept minimal so layout is unchanged) */
@@ -40,17 +38,20 @@
 
 <body>
   <!-- Spinner -->
-  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" aria-hidden="false" aria-label="Loading">
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" aria-hidden="true" aria-label="Loading">
     <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
       <span class="visually-hidden">Loading...</span>
     </div>
   </div>
 
   <!-- Brand -->
-  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
+  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner" aria-label="QuantaWave brand banner">
     <div class="container pb-2">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</a>
+        <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+          <img src="img/logo1.png" alt="QuantaWave Cyber R&D Lab Logo" width="60" height="70" class="me-3" />
+          <span class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</span>
+        </a>
       </div>
     </div>
   </div>
@@ -58,7 +59,7 @@
   <!-- Navbar -->
   <div class="container-fluid sticky-top" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3" aria-label="Primary">
         <a href="index.html" class="navbar-brand d-lg-none">
           <h1 class="text-primary m-0">QuantaWave Cyber R&D Lab</h1>
         </a>
@@ -68,18 +69,28 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
-            <a href="index.html" class="nav-item nav-link" aria-current="page">Home</a>
+            <a href="index.html" class="nav-item nav-link">Home</a>
             <a href="aboutus.html" class="nav-item nav-link">About</a>
             <a href="research.html" class="nav-item nav-link">Research</a>
 
             <div class="nav-item dropdown">
-              <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-              <div class="dropdown-menu bg-light m-0">
+              <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="servicesDropdown" aria-expanded="false">Services</a>
+              <div class="dropdown-menu bg-light m-0" aria-labelledby="servicesDropdown">
                 <a href="crdlab.html" class="dropdown-item">Cybersecurity R&D Lab</a>
                 <a href="qrdlab.html" class="dropdown-item">Quantum R&D Lab</a>
                 <a href="ai-lab.html" class="dropdown-item">AI & Cyber Analytics Lab</a>
                 <a href="hpc.html" class="dropdown-item">HPC</a>
                 <a href="testbed.html" class="dropdown-item">Testbed Access</a>
+              
+              </div>
+            </div>
+
+            <div class="nav-item dropdown">
+              <a href="academy.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="academyDropdown" aria-expanded="false">Academy</a>
+              <div class="dropdown-menu bg-light m-0" aria-labelledby="academyDropdown">
+                <a href="aepc.html" class="dropdown-item">Advanced Executive Program in Cybersecurity (AEPC)</a>
+                <a href="pcpc.html" class="dropdown-item">Professional Certificate Program in Cybersecurity (PCPC)</a>
+                <a href="pcp-cai.html" class="dropdown-item">Professional Certificate Program in Cybersecurity & AI (PCP-CAI)</a>
               </div>
             </div>
 
@@ -90,9 +101,9 @@
           </div>
 
           <div class="ms-auto d-none d-lg-flex">
-            <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-            <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
           </div>
         </div>
       </nav>
@@ -104,15 +115,15 @@
     <div class="container">
       <div class="d-flex align-items-start justify-content-between mb-4">
         <div>
-          <h1 class="fw-bold mb-1">Offline Workshops & Seminars — Dec 2025 → Feb 2026</h1>
+          <h1 class="fw-bold mb-1">Offline Workshops & Seminars â€” Dec 2025 â†’ Feb 2026</h1>
           <p class="lead mb-0">
-            Continuous Saturday sessions for three months. Default: <strong>4:00 PM – 6:00 PM</strong>.
-            <strong>3rd Saturday</strong>: Morning 10:00–12 & Evening 3:00–5.
+            Continuous Saturday sessions for three months. Default: <strong>4:00 PM â€“ 6:00 PM</strong>.
+            <strong>3rd Saturday</strong>: Morning 10:00â€“12 & Evening 3:00â€“5.
           </p>
         </div>
 
         <div class="text-end">
-          <small class="text-muted">Quick calendar — click a highlighted date to jump</small>
+          <small class="text-muted">Quick calendar â€” click a highlighted date to jump</small>
           <div class="mt-2 p-2 border rounded" style="background: rgba(255,255,255,0.02); min-width:240px;">
             <div id="miniCalendar" class="d-flex gap-2" aria-hidden="false"></div>
           </div>
@@ -134,12 +145,12 @@
               </div>
               <div class="flex-grow-1">
                 <h5 class="mb-0">Cisco Enterprise Networking Workshop</h5>
-                <small class="text-muted">Saturday, 06 December 2025 • 4:00 PM – 6:00 PM</small>
+                <small class="text-muted">Saturday, 06 December 2025 â€¢ 4:00 PM â€“ 6:00 PM</small>
               </div>
               <span class="badge bg-success ms-3 align-self-start">Hands-on</span>
             </div>
 
-            <p class="mb-3">VLANs, STP, OSPF & EIGRP with real Cisco devices — practical troubleshooting labs.</p>
+            <p class="mb-3">VLANs, STP, OSPF & EIGRP with real Cisco devices â€” practical troubleshooting labs.</p>
             <div class="d-flex gap-2">
               <button class="btn btn-sm btn-primary register-btn" data-event="Cisco Enterprise Networking Workshop" data-date="2025-12-06">Register</button>
               <a href="#event-2025-12-06" class="btn btn-sm btn-outline-secondary">Details</a>
@@ -159,7 +170,7 @@
               </div>
               <div class="flex-grow-1">
                 <h5 class="mb-0">Palo Alto Next-Gen Firewall Seminar</h5>
-                <small class="text-muted">Saturday, 13 December 2025 • 4:00 PM – 6:00 PM</small>
+                <small class="text-muted">Saturday, 13 December 2025 â€¢ 4:00 PM â€“ 6:00 PM</small>
               </div>
               <span class="badge bg-info ms-3 align-self-start">Seminar</span>
             </div>
@@ -177,14 +188,14 @@
           <div class="card p-3 h-100">
             <div class="d-flex justify-content-between">
               <div>
-                <h5 class="mb-1">3rd Saturday — Dual Sessions (Dec)</h5>
-                <small class="text-muted">Saturday, 20 December 2025 • Morning 10:00–12 & Evening 15:00–17:00</small>
+                <h5 class="mb-1">3rd Saturday â€” Dual Sessions (Dec)</h5>
+                <small class="text-muted">Saturday, 20 December 2025 â€¢ Morning 10:00â€“12 & Evening 15:00â€“17:00</small>
               </div>
             </div>
 
             <div class="row mt-3">
               <div class="col-md-6">
-                <strong>Morning — Fortinet Secure Network Ops</strong>
+                <strong>Morning â€” Fortinet Secure Network Ops</strong>
                 <p class="mb-1"><small class="text-muted">Hands-on FortiGate, VPN & IPS labs</small></p>
                 <div class="d-flex gap-2">
                   <button class="btn btn-sm btn-primary register-btn" data-event="Fortinet Secure Network Ops (Morning)" data-date="2025-12-20">Register (Morning)</button>
@@ -192,7 +203,7 @@
               </div>
 
               <div class="col-md-6">
-                <strong>Evening — Palo Alto Policy Demo</strong>
+                <strong>Evening â€” Palo Alto Policy Demo</strong>
                 <p class="mb-1"><small class="text-muted">Interactive policy tuning & threat prevention demo</small></p>
                 <div class="d-flex gap-2">
                   <button class="btn btn-sm btn-primary register-btn" data-event="Palo Alto Policy Demo (Evening)" data-date="2025-12-20">Register (Evening)</button>
@@ -214,7 +225,7 @@
               </div>
               <div class="flex-grow-1">
                 <h5 class="mb-0">Cisco Meraki Cloud Networking Workshop</h5>
-                <small class="text-muted">Saturday, 27 December 2025 • 4:00 PM – 6:00 PM</small>
+                <small class="text-muted">Saturday, 27 December 2025 â€¢ 4:00 PM â€“ 6:00 PM</small>
               </div>
               <span class="badge bg-success ms-3 align-self-start">Hands-on</span>
             </div>
@@ -238,8 +249,8 @@
                 </svg>
               </div>
               <div class="flex-grow-1">
-                <h5 class="mb-0">F5 Load Balancer — Practical Workshop</h5>
-                <small class="text-muted">Saturday, 03 January 2026 • 4:00 PM – 6:00 PM</small>
+                <h5 class="mb-0">F5 Load Balancer â€” Practical Workshop</h5>
+                <small class="text-muted">Saturday, 03 January 2026 â€¢ 4:00 PM â€“ 6:00 PM</small>
               </div>
               <span class="badge bg-success ms-3 align-self-start">Hands-on</span>
             </div>
@@ -263,8 +274,8 @@
                 </svg>
               </div>
               <div class="flex-grow-1">
-                <h5 class="mb-0">Check Point Infinity — Seminar</h5>
-                <small class="text-muted">Saturday, 10 January 2026 • 4:00 PM – 6:00 PM</small>
+                <h5 class="mb-0">Check Point Infinity â€” Seminar</h5>
+                <small class="text-muted">Saturday, 10 January 2026 â€¢ 4:00 PM â€“ 6:00 PM</small>
               </div>
               <span class="badge bg-info ms-3 align-self-start">Seminar</span>
             </div>
@@ -290,7 +301,7 @@
           Bangalore - 560 085<br><br>
           Email: <a href="mailto:info@quantawavecyber.com">info@quantawavecyber.com</a>
         </div>
-        <p class="text-muted mt-2">All events are offline. Registration required — seats limited.</p>
+        <p class="text-muted mt-2">All events are offline. Registration required â€” seats limited.</p>
       </div>
     </div>
   </section>
@@ -359,14 +370,10 @@
   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
   <!-- JS libraries (kept at end to preserve behavior) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Kept jQuery/bootstrap and template JS; removed animation/carousel/counter vendor scripts -->
+    <script src="js/main.min.js" defer></script>
 
   <!-- Page: calendar generation & Google Sheet redirect -->
   <script>
@@ -445,7 +452,7 @@
             day.classList.add('sat');
             day.style.background = '#0d6efd';
             day.style.color = '#fff';
-            day.title = 'Saturday — click to jump';
+            day.title = 'Saturday â€” click to jump';
             day.addEventListener('click', () => {
               const elId = 'event-' + mObj.y + '-' + String(mObj.m + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0');
               const el = document.getElementById(elId);
@@ -482,3 +489,5 @@
   </script>
 </body>
 </html>
+
+

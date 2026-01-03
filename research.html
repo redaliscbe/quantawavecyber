@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title>Research — QuantaWave Cyber R&D Lab</title>
+  <title>Research â€” QuantaWave Cyber R&D Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="research, cybersecurity, quantum, HPC, QKD, post-quantum" />
-  <meta name="description" content="Convergent research in cybersecurity, quantum technologies, and high-performance computing — prototypes, publications, and demonstrators." />
+  <meta name="description" content="Research at QuantaWave: publications and projects in cybersecurity, quantum computing, post-quantum cryptography and high-performance computing." />
   <link rel="canonical" href="https://quantawavecyber.com/research.html" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Research — QuantaWave Cyber R&D Lab" />
+  <meta property="og:title" content="Research â€” QuantaWave Cyber R&D Lab" />
   <meta property="og:description" content="Convergent research across cybersecurity, quantum technologies, and high-performance systems at QuantaWave." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://quantawavecyber.com/research.html" />
@@ -19,7 +19,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="manifest" href="img/favicon_io/site.webmanifest" />
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +36,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style.min.css" rel="stylesheet" />
 
   <style>
     /* tiny accessibility helper */
@@ -68,7 +68,7 @@
   <a class="skip-to-content" href="#main">Skip to main content</a>
 
   <!-- Spinner Start -->
-  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" aria-hidden="false">
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" aria-hidden="true" aria-label="Loading">
     <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
       <span class="visually-hidden">Loading...</span>
     </div>
@@ -76,10 +76,13 @@
   <!-- Spinner End -->
 
   <!-- Brand -->
-  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner">
+  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner" aria-label="QuantaWave brand banner">
     <div class="container pb-2">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</a>
+        <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+          <img src="img/logo1.png" alt="QuantaWave Cyber R&D Lab Logo" width="60" height="70" class="me-3" />
+          <span class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</span>
+        </a>
       </div>
     </div>
   </div>
@@ -88,7 +91,7 @@
   <div>
     <div class="container-fluid sticky-top" role="navigation" aria-label="Main navigation">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3" aria-label="Primary">
           <a href="index.html" class="navbar-brand d-lg-none">
             <h1 class="text-primary m-0">QuantaWave Cyber R&D Lab</h1>
           </a>
@@ -99,17 +102,26 @@
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-              <a href="index.html" class="nav-item nav-link" aria-current="page">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="aboutus.html" class="nav-item nav-link">About</a>
               <a href="research.html" class="nav-item nav-link active">Research</a>
               <div class="nav-item dropdown">
-                <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                <div class="dropdown-menu bg-light m-0">
+                <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="servicesDropdown" aria-expanded="false">Services</a>
+                <div class="dropdown-menu bg-light m-0" aria-labelledby="servicesDropdown">
                   <a href="crdlab.html" class="dropdown-item">Cybersecurity R&D Lab</a>
                   <a href="qrdlab.html" class="dropdown-item">Quantum R&D Lab</a>
                   <a href="ai-lab.html" class="dropdown-item">AI & Cyber Analytics Lab</a>
                   <a href="hpc.html" class="dropdown-item">HPC</a>
                   <a href="testbed.html" class="dropdown-item">Testbed Access</a>
+                  
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="academy.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="academyDropdown" aria-expanded="false">Academy</a>
+                <div class="dropdown-menu bg-light m-0" aria-labelledby="academyDropdown">
+                  <a href="aepc.html" class="dropdown-item">Advanced Executive Program in Cybersecurity (AEPC)</a>
+                  <a href="pcpc.html" class="dropdown-item">Professional Certificate Program in Cybersecurity (PCPC)</a>
+                  <a href="pcp-cai.html" class="dropdown-item">Professional Certificate Program in Cybersecurity & AI (PCP-CAI)</a>
                 </div>
               </div>
               <a href="events.html" class="nav-item nav-link">Events</a>
@@ -119,9 +131,9 @@
             </div>
 
             <div class="ms-auto d-none d-lg-flex">
-              <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"> <i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a>
-              <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+              <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
             </div>
           </div>
         </nav>
@@ -138,7 +150,7 @@
         <div class="row align-items-center">
           <div class="col-lg-9">
             <h1 class="h3 fw-bold mb-1">Research at QuantaWave Cyber R&D Lab</h1>
-            <p class="text-muted mb-0">Convergent research across cybersecurity, quantum technologies and high-performance computing — producing validated prototypes, publications and demonstrators.</p>
+            <p class="text-muted mb-0">Convergent research across cybersecurity, quantum technologies and high-performance computing â€” producing validated prototypes, publications and demonstrators.</p>
           </div>
           <div class="col-lg-3 text-lg-end d-none d-lg-block">
             <img src='img/internship-logo.png' alt="QuantaWave logo" width="172" height="172" loading="lazy">
@@ -322,7 +334,7 @@
   <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
 
   <!-- Template JS -->
-  <script src="js/main.js" defer></script>
+  <script src="js/main.min.js" defer></script>
 
   <script>
     // hide spinner and init animations
@@ -340,3 +352,5 @@
 </body>
 
 </html>
+
+

@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Lab &amp; Testbed Access Request – QuantaWave Cyber R&amp;D Lab</title>
+  <title>Lab Access Request â€” QuantaWave Cyber R&D Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Basic SEO -->
-  <meta name="description" content="Request access to QuantaWave Cyber R&amp;D Lab facilities, including cybersecurity labs, quantum R&amp;D, AI &amp; cyber analytics, HPC and testbed environments.">
+  <meta name="description" content="Request access to QuantaWave lab facilities for research, collaboration and testing across cybersecurity, quantum, AI and HPC domains." />
   <meta name="keywords" content="lab access form, testbed access, cyber range, HPC access, quantum lab access, QuantaWave Cyber R&D Lab, Bangalore">
   <meta name="robots" content="index,follow">
 
   <!-- Open Graph / Social -->
-  <meta property="og:title" content="Lab &amp; Testbed Access Request – QuantaWave Cyber R&amp;D Lab">
+  <meta property="og:title" content="Lab &amp; Testbed Access Request â€“ QuantaWave Cyber R&amp;D Lab">
   <meta property="og:description" content="Submit a request to use QuantaWave Cyber R&amp;D Lab facilities for research, projects, training and collaborations.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.quantawavecyber.com/lab-access-form.html">
@@ -19,7 +19,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Lab &amp; Testbed Access Request – QuantaWave Cyber R&amp;D Lab">
+  <meta name="twitter:title" content="Lab &amp; Testbed Access Request â€“ QuantaWave Cyber R&amp;D Lab">
   <meta name="twitter:description" content="Request access to cybersecurity, quantum, AI, HPC and testbed resources at QuantaWave Cyber R&amp;D Lab.">
 
   <!-- Canonical -->
@@ -29,7 +29,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -45,7 +45,7 @@
 
   <!-- Core styles -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 
   <style>
     /* Same utilities / page-specific styles as contact page */
@@ -97,10 +97,13 @@
   </div>
 
   <!-- Brand -->
-  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner">
+  <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner" aria-label="QuantaWave brand banner">
     <div class="container pb-2">
       <div class="d-flex align-items-center justify-content-between">
-        <a href="index.html" class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&amp;D Lab</a>
+        <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+          <img src="img/logo1.png" alt="QuantaWave Cyber R&D Lab Logo" width="60" height="70" class="me-3" />
+          <span class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</span>
+        </a>
       </div>
     </div>
   </div>
@@ -108,7 +111,7 @@
   <!-- Navbar (same layout) -->
   <div class="container-fluid sticky-top" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3" aria-label="Primary">
         <a href="index.html" class="navbar-brand d-lg-none">
           <h1 class="text-primary m-0">QuantaWave Cyber R&amp;D Lab</h1>
         </a>
@@ -123,13 +126,23 @@
             <a href="research.html" class="nav-item nav-link">Research</a>
 
             <div class="nav-item dropdown">
-              <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-              <div class="dropdown-menu bg-light m-0">
+              <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="servicesDropdown" aria-expanded="false">Services</a>
+              <div class="dropdown-menu bg-light m-0" aria-labelledby="servicesDropdown">
                 <a href="crdlab.html" class="dropdown-item">Cybersecurity R&amp;D Lab</a>
                 <a href="qrdlab.html" class="dropdown-item">Quantum R&amp;D Lab</a>
                 <a href="ai-lab.html" class="dropdown-item">AI &amp; Cyber Analytics Lab</a>
                 <a href="hpc.html" class="dropdown-item">HPC</a>
                 <a href="testbed.html" class="dropdown-item">Testbed Access</a>
+                
+              </div>
+            </div>
+
+            <div class="nav-item dropdown">
+              <a href="academy.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="academyDropdown" aria-expanded="false">Academy</a>
+              <div class="dropdown-menu bg-light m-0" aria-labelledby="academyDropdown">
+                <a href="aepc.html" class="dropdown-item">Advanced Executive Program in Cybersecurity (AEPC)</a>
+                <a href="pcpc.html" class="dropdown-item">Professional Certificate Program in Cybersecurity (PCPC)</a>
+                <a href="pcp-cai.html" class="dropdown-item">Professional Certificate Program in Cybersecurity &amp; AI (PCP-CAI)</a>
               </div>
             </div>
 
@@ -140,9 +153,9 @@
           </div>
 
           <div class="ms-auto d-none d-lg-flex">
-            <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-            <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
           </div>
         </div>
       </nav>
@@ -174,7 +187,7 @@
               <div class="card-body">
                 <h5 class="card-title mb-3">Access Guidelines</h5>
                 <ul class="mb-3">
-                  <li>Submit the form at least <strong>3–5 working days</strong> before the requested date.</li>
+                  <li>Submit the form at least <strong>3â€“5 working days</strong> before the requested date.</li>
                   <li>Bring your institute/company ID card on the day of access.</li>
                   <li>Use of datasets, tools and credentials must follow lab policies.</li>
                   <li>No copying of confidential or proprietary data from the testbed.</li>
@@ -246,7 +259,7 @@
                         <option value="cyber_lab">Cybersecurity R&amp;D Lab / Cyber Range</option>
                         <option value="quantum_lab">Quantum R&amp;D Lab</option>
                         <option value="ai_lab">AI &amp; Cyber Analytics Lab</option>
-                        <option value="hpc_lab">HPC – Compute Access</option>
+                        <option value="hpc_lab">HPC â€“ Compute Access</option>
                         <option value="testbed">Network / Testbed Access</option>
                       </select>
                       <div class="invalid-feedback">Please select at least one lab or facility.</div>
@@ -401,16 +414,10 @@
   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
 
   <!-- JS libraries -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-  <!-- Template -->
-  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- Removed animation/carousel/counter libraries (not needed for form page) -->
+  <!-- Template JS withheld to avoid loading unused code on form pages -->
 
   <!-- Lab access form script (Google Form or mailto fallback) -->
   <script>
@@ -534,3 +541,4 @@
   </script>
 </body>
 </html>
+

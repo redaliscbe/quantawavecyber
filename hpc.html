@@ -1,17 +1,17 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>QuantaWave Cyber R&amp;D Lab — HPC</title>
+  <title>High-Performance Computing (HPC) â€” QuantaWave Cyber R&D Lab</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="QuantaWave Cyber R&D Lab — High Performance Computing (HPC) Lab" />
-  <meta name="keywords" content="HPC, quantum, cybersecurity, clusters, GPU, research" />
+  <meta name="description" content="HPC services and research at QuantaWave: cluster computing, GPU acceleration, simulations and large-scale data processing support." />
+  <meta name="keywords" content="HPC, clusters, GPU, simulations, high-performance computing, QuantaWave" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="img/favicon_io/site.webmanifest">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +28,7 @@
 
   <!-- Bootstrap & Site CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 
   <style>
     /* tiny critical styles */
@@ -45,9 +45,14 @@
   </div>
 
   <!-- Header / Brand -->
-  <header class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
-    <div class="container">
-      <a href="index.html" class="h1 text-white mb-0">QuantaWave Cyber R&amp;D Lab</a>
+  <header class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex" role="banner" aria-label="QuantaWave brand banner">
+    <div class="container pb-2">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+          <img src="img/logo1.png" alt="QuantaWave Cyber R&D Lab Logo" width="60" height="70" class="me-3" />
+          <span class="h1 text-white mb-0 text-decoration-none">QuantaWave Cyber R&D Lab</span>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -55,7 +60,7 @@
   <div>
     <div class="container-fluid sticky-top" role="navigation" aria-label="Main navigation">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3" aria-label="Primary">
           <a href="index.html" class="navbar-brand d-lg-none">
             <h1 class="text-primary m-0">QuantaWave Cyber R&D Lab</h1>
           </a>
@@ -66,17 +71,26 @@
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-              <a href="index.html" class="nav-item nav-link" aria-current="page">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="aboutus.html" class="nav-item nav-link">About</a>
               <a href="research.html" class="nav-item nav-link">Research</a>
               <div class="nav-item dropdown">
-                <a href="crdlab.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
-                <div class="dropdown-menu bg-light m-0">
+                <a href="crdlab.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="servicesDropdown" aria-expanded="false">Services</a>
+                <div class="dropdown-menu bg-light m-0" aria-labelledby="servicesDropdown">
                   <a href="crdlab.html" class="dropdown-item">Cybersecurity R&D Lab</a>
                   <a href="qrdlab.html" class="dropdown-item">Quantum R&D Lab</a>
                   <a href="ai-lab.html" class="dropdown-item">AI & Cyber Analytics Lab</a>
                   <a href="hpc.html" class="dropdown-item">HPC</a>
                   <a href="testbed.html" class="dropdown-item">Testbed Access</a>
+                  
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="academy.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="academyDropdown" aria-expanded="false">Academy</a>
+                <div class="dropdown-menu bg-light m-0" aria-labelledby="academyDropdown">
+                  <a href="aepc.html" class="dropdown-item">Advanced Executive Program in Cybersecurity (AEPC)</a>
+                  <a href="pcpc.html" class="dropdown-item">Professional Certificate Program in Cybersecurity (PCPC)</a>
+                  <a href="pcp-cai.html" class="dropdown-item">Professional Certificate Program in Cybersecurity & AI (PCP-CAI)</a>
                 </div>
               </div>
               <a href="events.html" class="nav-item nav-link">Events</a>
@@ -86,9 +100,9 @@
             </div>
 
             <div class="ms-auto d-none d-lg-flex">
-              <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"> <i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a>
-              <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.facebook.com/profile.php?id=61584088046365" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              <a class="btn btn-sm-square btn-primary me-2" href="https://www.linkedin.com/in/quantawave-cyber-research-and-development-lab-4856a0378/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+              <a class="btn btn-sm-square btn-primary ms-2" href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
             </div>
           </div>
         </nav>
@@ -100,10 +114,31 @@
     <!-- HPC LAB SECTION -->
     <section id="hpc-lab" class="py-5">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold">High-Performance Computing (HPC) Lab</h2>
-          <p class="text-muted">QuantawaveCyber HPC Lab delivers scalable, accelerated, and secure computing infrastructure for AI, analytics, scientific simulation, and next-generation research workloads.</p>
+        <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">High-Performance Computing (HPC) Lab</h1>
+
+          <p class="lead mb-4">
+            <em>Quantawave</em> High-Performance Computing (HPC) Lab provides scalable,
+            GPU-accelerated, and secure computing infrastructure for AI,
+            analytics, scientific simulation, and next-generation research workloads.
+          </p>
+
+          <!-- BUTTONS -->
+          <div class="d-flex gap-3 flex-wrap mb-4">
+            <a class="btn btn-primary btn-lg" href="#access">
+              <i class="bi bi-lock-fill me-2"></i>Request Lab Access
+            </a>
+
+            <a class="btn btn-outline-secondary btn-lg" href="#projects">
+              <i class="bi bi-journal-code me-2"></i>View Capabilities
+            </a>
+          </div>
+          <!-- ONE LINE SPACE IS CREATED HERE -->
         </div>
+      </div>
+
+       
 
         <div class="row g-4">
           <!-- Reusable card -->
@@ -198,6 +233,119 @@
         </div>
       </div>
     </section>
+    <!-- FAQ SECTION START -->
+<section id="faq" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Frequently Asked Questions (FAQ)</h2>
+      <p class="text-muted">
+        Common questions about access, infrastructure, and usage of the High-Performance Computing (HPC) Lab.
+      </p>
+    </div>
+
+    <div class="accordion accordion-flush" id="faqAccordion">
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="hpcFaqOne">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#hpcFaqCollapseOne"
+                  aria-expanded="false" aria-controls="hpcFaqCollapseOne">
+            Who can access the HPC Lab?
+          </button>
+        </h2>
+        <div id="hpcFaqCollapseOne" class="accordion-collapse collapse"
+             aria-labelledby="hpcFaqOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            HPC Lab access is available to faculty members, researchers, postgraduate students,
+            industry collaborators, and approved interns requiring large-scale computing
+            for research, analytics, or advanced simulations.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="hpcFaqTwo">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#hpcFaqCollapseTwo"
+                  aria-expanded="false" aria-controls="hpcFaqCollapseTwo">
+            What types of workloads are supported?
+          </button>
+        </h2>
+        <div id="hpcFaqCollapseTwo" class="accordion-collapse collapse"
+             aria-labelledby="hpcFaqTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            The HPC Lab supports AI and deep learning workloads, scientific simulations,
+            high-volume data analytics, cryptographic research, cybersecurity experimentation,
+            and large-scale parallel computing tasks.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="hpcFaqThree">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#hpcFaqCollapseThree"
+                  aria-expanded="false" aria-controls="hpcFaqCollapseThree">
+            Does the HPC Lab provide GPU acceleration?
+          </button>
+        </h2>
+        <div id="hpcFaqCollapseThree" class="accordion-collapse collapse"
+             aria-labelledby="hpcFaqThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes. The lab provides GPU-accelerated environments optimized for deep learning,
+            high-performance analytics, model training, inference benchmarking,
+            and compute-intensive research workflows.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="hpcFaqFour">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#hpcFaqCollapseFour"
+                  aria-expanded="false" aria-controls="hpcFaqCollapseFour">
+            Is the HPC environment secure for sensitive research?
+          </button>
+        </h2>
+        <div id="hpcFaqCollapseFour" class="accordion-collapse collapse"
+             aria-labelledby="hpcFaqFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            The HPC Lab operates within a secure computing environment featuring
+            role-based access control, isolated workloads, encrypted pipelines,
+            and compliance-ready configurations for sensitive and regulated research.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="hpcFaqFive">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#hpcFaqCollapseFive"
+                  aria-expanded="false" aria-controls="hpcFaqCollapseFive">
+            How can I request HPC access or propose a project?
+          </button>
+        </h2>
+        <div id="hpcFaqCollapseFive" class="accordion-collapse collapse"
+             aria-labelledby="hpcFaqFive" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Access requests and project proposals can be submitted through
+            the Lab Access Form or by contacting the Lab Director.
+            Requests are reviewed based on compute requirements,
+            feasibility, and research or industry impact.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- FAQ SECTION END -->
+
   </main>
 
   <!-- Footer -->
@@ -263,7 +411,7 @@
   <script src="lib/waypoints/waypoints.min.js" defer></script>
   <script src="lib/counterup/counterup.min.js" defer></script>
   <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <script src="js/main.min.js" defer></script>
 
   <script>
     // hide spinner & show back-to-top on load/scroll
@@ -275,3 +423,5 @@
   </script>
 </body>
 </html>
+
+
